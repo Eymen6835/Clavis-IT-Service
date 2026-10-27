@@ -29,13 +29,13 @@
       <path d="M82 150 120 118"/>
       <path d="M158 150 120 118"/>
     </g>
-    <circle cx="120" cy="72"  r="10" fill="#0F172A"/>
+    <circle cx="120" cy="72"  r="10" fill="#0F1B2D"/>
     <circle cx="82"  cy="150" r="10" fill="#0F1B2D"/>
     <circle cx="158" cy="150" r="10" fill="#0F1B2D"/>
-    <circle cx="120" cy="118" r="14" fill="#0284C7"/>
+    <circle cx="120" cy="118" r="14" fill="#E8A33D"/>
   </g>
 
   <text class="wm"  x="215.433" y="43.917"  fill="#0F1B2D">Fix&amp;Fertig</text>
-  <text class="wm"  x="215.433" y="133.017" fill="#0284C7">IT</text>
+  <text class="wm"  x="215.433" y="133.017" fill="#E8A33D">IT</text>
   <text class="tag" x="215.433" y="209.220" fill="#495568">IT-SERVICE &#183; ZUVERL&#196;SSIG &#183; VOR ORT</text>
 </svg>

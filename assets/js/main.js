@@ -81,8 +81,8 @@
 
   function faerbeLeiste() {
     if (!leiste) return;
-    var farbe = currentTheme() === 'dark' ? '#090e1a' : '#f8fafc';
-    if (farbe === '#f8fafc' && kopf && fuss &&
+    var farbe = currentTheme() === 'dark' ? '#0b111b' : '#fbfaf7';
+    if (farbe === '#fbfaf7' && kopf && fuss &&
         fuss.getBoundingClientRect().top < kopf.getBoundingClientRect().bottom) {
       farbe = '#7d8999';
     }
