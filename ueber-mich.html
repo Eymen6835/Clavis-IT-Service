@@ -158,13 +158,30 @@
 
 <main id="main">
 
-  <section class="page-head mit-portraet">
-    <div class="portraet-hg" aria-hidden="true"></div>
+  <section class="page-head">
     <div class="wrap">
-      <h1>Eymen Kumaru</h1>
-      <p class="lede">
-        Ihre persönliche IT-Haushaltshilfe. Wenn Sie anrufen, sprechen Sie direkt mit mir – und ich bin es auch, der danach zu Ihnen nach Hause kommt.
-      </p>
+      <div class="split split--wide-left split--top reveal" style="align-items: center; gap: var(--sp-5);">
+        <div>
+          <h1>Eymen Kumaru</h1>
+          <p class="lede">
+            Ihre persönliche IT-Haushaltshilfe. Wenn Sie anrufen, sprechen Sie direkt mit mir – und ich bin es auch, der danach zu Ihnen nach Hause kommt.
+          </p>
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <figure class="media media--portrait media--hell" style="aspect-ratio: 3 / 4; width: 100%; max-width: 20rem; margin: 0; box-shadow: var(--shadow-md);">
+            <picture>
+              <source type="image/webp"
+                      srcset="assets/img/ueber-mich-persoenlich-400.webp 400w, assets/img/ueber-mich-persoenlich-800.webp 800w"
+                      sizes="(min-width: 56em) 20rem, 85vw">
+              <img src="assets/img/ueber-mich-persoenlich-800.jpg"
+                   srcset="assets/img/ueber-mich-persoenlich-400.jpg 400w, assets/img/ueber-mich-persoenlich-800.jpg 800w"
+                   sizes="(min-width: 56em) 20rem, 85vw"
+                   width="768" height="1024" fetchpriority="high"
+                   alt="Eymen Kumaru – Ihre persönliche IT-Haushaltshilfe vor Ort">
+            </picture>
+          </figure>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -199,19 +216,6 @@
         </div>
 
         <div>
-          <figure class="media media--portrait media--hell" style="aspect-ratio: 3 / 4; margin-bottom: var(--sp-3); box-shadow: var(--shadow-sm);">
-            <picture>
-              <source type="image/webp"
-                      srcset="assets/img/ueber-mich-persoenlich-400.webp 400w, assets/img/ueber-mich-persoenlich-800.webp 800w"
-                      sizes="(min-width: 56em) 22rem, 100vw">
-              <img src="assets/img/ueber-mich-persoenlich-800.jpg"
-                   srcset="assets/img/ueber-mich-persoenlich-400.jpg 400w, assets/img/ueber-mich-persoenlich-800.jpg 800w"
-                   sizes="(min-width: 56em) 22rem, 100vw"
-                   width="768" height="1024" loading="lazy" decoding="async"
-                   alt="Eymen Kumaru – Ihre persönliche IT-Haushaltshilfe vor Ort">
-            </picture>
-          </figure>
-
           <div class="note">
             <p><strong>Auf einen Blick</strong></p>
             <ul style="list-style: none; padding: 0; display: grid; gap: 0.75rem; margin-top: var(--sp-2)">
