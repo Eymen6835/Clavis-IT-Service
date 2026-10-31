@@ -52,6 +52,8 @@
       "acceptedAnswer": { "@type": "Answer", "text": "Dann sage ich Ihnen, welcher Weg sich für Sie lohnt. Sie investieren nur die Zeit, die ich bis dahin gearbeitet habe." } },
     { "@type": "Question", "name": "Muss ich mich mit Technik auskennen?",
       "acceptedAnswer": { "@type": "Answer", "text": "Nein, überhaupt nicht! Sie müssen keine Fachbegriffe kennen. Beschreiben Sie mir einfach, was nicht funktioniert. Ich kümmere mich um die Lösung und erkläre Ihnen alles in einfachen, verständlichen Worten." } },
+    { "@type": "Question", "name": "Rechnen Sie für Unternehmen netto ab?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja. Für Unternehmen gilt der Satz von 49 € netto pro Stunde zzgl. 19 % USt. (12,25 € netto je angefangene Viertelstunde). Auf der Rechnung ist die Umsatzsteuer gesondert ausgewiesen und damit für Sie vorsteuerabzugsfähig. Für Privathaushalte sind die 49 € der Endpreis inklusive 19 % MwSt. Alles Weitere finden Sie auf der Seite für Unternehmen." } },
     { "@type": "Question", "name": "Bar oder per Überweisung?",
       "acceptedAnswer": { "@type": "Answer", "text": "Bar vor Ort oder per Überweisung, wie es Ihnen lieber ist." } },
     { "@type": "Question", "name": "Kommen Sie auch abends oder am Wochenende?",
@@ -168,8 +170,9 @@
     <nav class="nav" aria-label="Hauptnavigation">
       <ul class="nav__list">
         <li><a class="nav__link" href="./">Start</a></li>
-        <li><a class="nav__link" href="leistungen">Leistungen</a></li>
-        <li><a class="nav__link" href="preise" aria-current="page">Preise</a></li>
+        <li><a class="nav__link" href="geschaeftskunden">Unternehmen</a></li>
+        <li><a class="nav__link" href="leistungen">Privatkunden</a></li>
+        <li><a class="nav__link is-active" href="preise" aria-current="page">Preise</a></li>
         <li><a class="nav__link" href="ueber-mich">Über mich</a></li>
         <li><a class="nav__link" href="kontakt">Kontakt</a></li>
       </ul>
@@ -194,7 +197,8 @@
   <div class="wrap">
     <ul class="mobile-nav__list">
       <li><a href="./">Start</a></li>
-      <li><a href="leistungen">Leistungen</a></li>
+      <li><a href="geschaeftskunden">Unternehmen</a></li>
+      <li><a href="leistungen">Privatkunden</a></li>
       <li><a href="preise" aria-current="page">Preise</a></li>
       <li><a href="ueber-mich">Über mich</a></li>
       <li><a href="kontakt">Kontakt</a></li>
@@ -227,7 +231,7 @@
             Klarer Endpreis inklusive 19 % MwSt. Vor Ort zählt die erste Stunde voll, danach geht es im fairen Viertelstundentakt zu 12,25&nbsp;€ weiter. Sind wir nach 70 Minuten fertig, rechne ich 75 Minuten ab – nicht zwei volle Stunden. Per Fernwartung rechne ich ab der ersten Viertelstunde ab.
           </p>
           <p class="price-figure__note">
-            Alle Preise sind Endpreise inklusive 19 % MwSt.
+            Für Privathaushalte inklusive 19 % MwSt. · Für Unternehmen 49&nbsp;€ netto zzgl. 19 % USt. (vorsteuerabzugsfähig).
           </p>
           <div class="btn-row" style="margin-top: var(--sp-3)">
             <a class="btn btn--primary" href="tel:+491626327036">0162 63270 36</a>
@@ -404,6 +408,11 @@
         </details>
 
         <details>
+          <summary>Rechnen Sie für Unternehmen netto ab?</summary>
+          <div><p>Ja. Für Unternehmen gilt der Satz von 49&nbsp;€ netto pro Stunde zzgl. 19&nbsp;% USt. (12,25&nbsp;€ netto je angefangene Viertelstunde). Auf der Rechnung ist die Umsatzsteuer gesondert ausgewiesen und damit für Sie vorsteuerabzugsfähig. Für Privathaushalte sind die 49&nbsp;€ der Endpreis inklusive 19&nbsp;% MwSt. Alles Weitere finden Sie auf der Seite <a href="geschaeftskunden">für Unternehmen</a>.</p></div>
+        </details>
+
+        <details>
           <summary>Bar oder per Überweisung?</summary>
           <div><p>Bar vor Ort oder per Überweisung, wie es Ihnen lieber ist.</p></div>
         </details>
@@ -464,7 +473,8 @@
         <h2>Seiten</h2>
         <ul>
           <li><a href="./">Start</a></li>
-          <li><a href="leistungen">Leistungen</a></li>
+          <li><a href="geschaeftskunden">Unternehmen</a></li>
+          <li><a href="leistungen">Privatkunden</a></li>
           <li><a href="preise">Preise</a></li>
           <li><a href="ueber-mich">Über mich</a></li>
           <li><a href="kontakt">Kontakt</a></li>

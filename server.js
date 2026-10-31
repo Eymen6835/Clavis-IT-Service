@@ -26,11 +26,6 @@ const server = http.createServer((req, res) => {
   const urlPath = decodeURIComponent(req.url.split('?')[0]);
   const cleanPath = urlPath.replace(/^\/+|\/+$/g, '');
 
-  if (cleanPath === 'geschaeftskunden' || cleanPath === 'geschaeftskunden.html') {
-    res.writeHead(301, { 'Location': '/leistungen' });
-    res.end();
-    return;
-  }
 
   const candidates = [];
   if (cleanPath === '') {
