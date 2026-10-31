@@ -107,8 +107,8 @@
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beschaffung im Kundenauftrag: Geräte aussuchen, vergleichen, bestellen" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Laufende IT-Betreuung ohne feste Laufzeit" } },
           { "@type": "Offer", "name": "Wartungsvertrag", "itemOffered": { "@type": "Service", "name": "IT-Wartungsvertrag: Wartungstermin einmal im Quartal, Überwachung, Updates, geprüfte Datensicherung, drei Stunden inklusive" },
-            "priceSpecification": { "@type": "UnitPriceSpecification", "price": "350.00", "minPrice": "350.00", "priceCurrency": "EUR", "unitCode": "MON", "valueAddedTaxIncluded": false,
-              "description": "Ab 350 € netto je Monat zzgl. 19 % USt., drei Stunden inklusive, weitere Stunden 49 € netto, Mindestlaufzeit drei Monate, danach monatlich kündbar." } }
+            "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "EUR", "unitCode": "MON", "valueAddedTaxIncluded": false,
+              "description": "Monatlicher Betrag nach individueller Zusammenstellung, online berechenbar. Netto zzgl. 19 % USt., drei Stunden inklusive, weitere Stunden 49 € netto, Mindestlaufzeit drei Monate, danach monatlich kündbar." } }
         ]
       }
     },
@@ -125,7 +125,7 @@
         { "@type": "Question", "name": "Was gehört zur regelmäßigen Wartung?",
           "acceptedAnswer": { "@type": "Answer", "text": "Ein fester Termin im Takt Ihrer Wahl, meistens quartalsweise. Geprüft werden Updates für Windows und die Programme, Virenschutz, Datensicherung samt Rückspieltest, Zustand der Festplatten, Router und Access Points sowie Drucker und Verbrauchsmaterial. Dazu die Reinigung der Geräte, damit sie lange halten. Danach bekommen Sie einen kurzen Bericht, was ich erledigt habe und was als Nächstes ansteht." } },
         { "@type": "Question", "name": "Brauche ich dafür einen Wartungsvertrag?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Nein. Die Wartungstermine können wir auch formlos nach Aufwand vereinbaren. Wenn Sie lieber fest planen, gibt es den Wartungsvertrag: ab 350 € netto im Monat mit drei Stunden inklusive, Mindestlaufzeit drei Monate, danach monatlich kündbar." } },
+          "acceptedAnswer": { "@type": "Answer", "text": "Nein. Die Wartungstermine können wir auch formlos nach Aufwand vereinbaren. Wenn Sie lieber fest planen, gibt es den Wartungsvertrag: Sie stellen online zusammen, was zu Ihrem Betrieb gehört, drei Stunden sind inklusive, weitere Stunden kosten 49 € netto, Mindestlaufzeit drei Monate, danach monatlich kündbar." } },
         { "@type": "Question", "name": "Wie schnell sind Sie da?",
           "acceptedAnswer": { "@type": "Answer", "text": "Meistens klappt ein Termin am selben oder am nächsten Tag. Wenn es eilt, sagen Sie es mir am Telefon, dann geht es noch schneller. Sie erfahren am Telefon verbindlich, wann ich da bin. Vieles erledige ich auch sofort per Fernwartung." } },
         { "@type": "Question", "name": "Wann erreiche ich Sie?",
@@ -237,6 +237,7 @@
         <a class="btn btn--primary" href="tel:+491626327036">0162 63270 36</a>
         <span class="tel-karte"><img src="assets/img/qr-anrufen.svg" width="25" height="25" alt="QR-Code zum Anrufen"><span><span class="tel-karte__label">Scannen und anrufen</span><a href="tel:+491626327036">0162 63270 36</a></span></span>
         <a class="btn btn--ghost" href="mailto:kontakt@clavis-itservice.de?subject=Anfrage%20Gesch%C3%A4ftskunden">E-Mail schreiben</a>
+        <a class="arrow-link" href="#rechner">Wartungsvertrag online berechnen</a>
       </div>
     </div>
   </section>
@@ -259,20 +260,10 @@
           </div>
         </div>
 
-        <figure class="media media--wide media--hell">
-          <picture>
-            <source type="image/avif"
-                    srcset="assets/img/buero-800.avif 800w, assets/img/buero-1600.avif 1600w"
-                    sizes="(min-width: 64em) 56vw, 92vw">
-            <source type="image/webp"
-                    srcset="assets/img/buero-800.webp 800w, assets/img/buero-1600.webp 1600w"
-                    sizes="(min-width: 64em) 56vw, 92vw">
-            <img src="assets/img/buero-800.jpg"
-                 srcset="assets/img/buero-800.jpg 800w, assets/img/buero-1600.jpg 1600w"
-                 sizes="(min-width: 64em) 56vw, 92vw"
-                 width="1600" height="1067" loading="lazy" decoding="async"
-                 alt="Kleines Büro mit mehreren Arbeitsplätzen, Bildschirmen und Pflanzen">
-          </picture>
+        <figure class="media media--wide">
+          <img src="assets/img/unternehmen-buero.svg"
+               width="1600" height="1067" loading="lazy" decoding="async"
+               alt="Illustration eines kleinen Büros mit zwei Arbeitsplätzen, WLAN, Netzwerkschrank und gesicherten Daten">
         </figure>
       </div>
 
@@ -383,7 +374,7 @@
             Zzgl. 19 % USt. Vor Ort zählt die erste Stunde voll, danach geht es in Viertelstunden zu 12,25 € netto weiter. Per Fernwartung rechne ich ab der ersten Viertelstunde ab.
           </p>
           <div class="btn-row" style="margin-top: var(--sp-3)">
-            <a class="btn btn--ghost" href="preise">Anfahrt &amp; Beispiele</a>
+            <a class="btn btn--ghost" href="preise#preise-unternehmen">Anfahrt &amp; Beispiele</a>
           </div>
         </div>
 
@@ -401,13 +392,8 @@
       <div class="price-panel reveal" id="wartungsvertrag" style="margin-top: var(--sp-4)">
         <div>
           <h3 style="margin-bottom: 0.5rem">Wartungsvertrag</h3>
-          <div class="price-figure">
-            <span class="price-figure__unit">ab</span>
-            <span class="price-figure__value">350&nbsp;€</span>
-            <span class="price-figure__unit">netto im Monat</span>
-          </div>
           <p>
-            Zzgl. 19 % USt. Drei Stunden sind inklusive. Was über die drei Stunden hinausgeht, berechne ich mit 49 € netto pro Stunde. Der Vertrag läuft mindestens drei Monate, danach ist er monatlich kündbar.
+            Den monatlichen Betrag stellen Sie unten für Ihren Betrieb zusammen. Zzgl. 19 % USt. Drei Stunden sind inklusive. Was über die drei Stunden hinausgeht, berechne ich mit 49 € netto pro Stunde. Der Vertrag läuft mindestens drei Monate, danach ist er monatlich kündbar.
           </p>
         </div>
 
@@ -422,6 +408,161 @@
           <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Vorrang bei Störungen:</strong> Vertragskunden kommen zuerst dran.</span></li>
         </ul>
       </div>
+
+      <div class="rechner-intro reveal" id="rechner" style="margin-top: var(--sp-5)">
+        <h3 style="margin-bottom: 0.3rem">Vertrag für Ihren Betrieb berechnen</h3>
+        <p style="color: var(--ink-muted); max-width: 52rem">Stellen Sie zusammen, was zu Ihrem Betrieb gehört. Die Summe ist eine unverbindliche Kalkulation, den endgültigen Betrag lege ich nach einer kurzen Bestandsaufnahme fest.</p>
+      </div>
+
+      <div class="rechner reveal" id="vertragsrechner" data-rechner style="margin-top: var(--sp-3)">
+        <ul class="rechner__liste">
+          <li class="rechner__zeile" data-zeile data-preis="250" data-einheit="Standort" data-anzahl="1" data-min="0">
+            <div class="rechner__info">
+              <span class="rechner__label">Standortpauschale</span>
+              <span class="rechner__hinweis">Büro, Filiale oder Werkstatt &middot; 250&nbsp;€ je Standort und Monat</span>
+            </div>
+            <div class="rechner__steller">
+              <button type="button" class="rechner__btn" data-aktion="minus" aria-label="Anzahl Standorte verringern">&minus;</button>
+              <output class="rechner__anzahl" data-anzeige>1</output>
+              <button type="button" class="rechner__btn" data-aktion="plus" aria-label="Anzahl Standorte erhöhen">+</button>
+            </div>
+            <span class="rechner__zeilensumme" data-zeilensumme>250,00&nbsp;€</span>
+          </li>
+
+          <li class="rechner__zeile" data-zeile data-preis="10" data-einheit="VM" data-anzahl="0" data-min="0">
+            <div class="rechner__info">
+              <span class="rechner__label">Virtuelle Maschinen</span>
+              <span class="rechner__hinweis">10&nbsp;€ je VM und Monat</span>
+            </div>
+            <div class="rechner__steller">
+              <button type="button" class="rechner__btn" data-aktion="minus" aria-label="Anzahl virtuelle Maschinen verringern">&minus;</button>
+              <output class="rechner__anzahl" data-anzeige>0</output>
+              <button type="button" class="rechner__btn" data-aktion="plus" aria-label="Anzahl virtuelle Maschinen erhöhen">+</button>
+            </div>
+            <span class="rechner__zeilensumme" data-zeilensumme>0,00&nbsp;€</span>
+          </li>
+
+          <li class="rechner__zeile" data-zeile data-preis="10" data-einheit="Gerät" data-anzahl="0" data-min="0">
+            <div class="rechner__info">
+              <span class="rechner__label">Computer, Notebooks, Handys &amp; Tablets</span>
+              <span class="rechner__hinweis">10&nbsp;€ je Gerät und Monat</span>
+            </div>
+            <div class="rechner__steller">
+              <button type="button" class="rechner__btn" data-aktion="minus" aria-label="Anzahl Computer, Notebooks, Handys und Tablets verringern">&minus;</button>
+              <output class="rechner__anzahl" data-anzeige>0</output>
+              <button type="button" class="rechner__btn" data-aktion="plus" aria-label="Anzahl Computer, Notebooks, Handys und Tablets erhöhen">+</button>
+            </div>
+            <span class="rechner__zeilensumme" data-zeilensumme>0,00&nbsp;€</span>
+          </li>
+
+          <li class="rechner__zeile" data-zeile data-preis="10" data-einheit="Drucker" data-anzahl="0" data-min="0">
+            <div class="rechner__info">
+              <span class="rechner__label">Drucker &amp; Multifunktionsgeräte</span>
+              <span class="rechner__hinweis">10&nbsp;€ je Gerät und Monat</span>
+            </div>
+            <div class="rechner__steller">
+              <button type="button" class="rechner__btn" data-aktion="minus" aria-label="Anzahl Drucker verringern">&minus;</button>
+              <output class="rechner__anzahl" data-anzeige>0</output>
+              <button type="button" class="rechner__btn" data-aktion="plus" aria-label="Anzahl Drucker erhöhen">+</button>
+            </div>
+            <span class="rechner__zeilensumme" data-zeilensumme>0,00&nbsp;€</span>
+          </li>
+
+          <li class="rechner__zeile" data-zeile data-preis="60" data-einheit="Server" data-anzahl="0" data-min="0">
+            <div class="rechner__info">
+              <span class="rechner__label">Server</span>
+              <span class="rechner__hinweis">60&nbsp;€ je Server und Monat</span>
+            </div>
+            <div class="rechner__steller">
+              <button type="button" class="rechner__btn" data-aktion="minus" aria-label="Anzahl Server verringern">&minus;</button>
+              <output class="rechner__anzahl" data-anzeige>0</output>
+              <button type="button" class="rechner__btn" data-aktion="plus" aria-label="Anzahl Server erhöhen">+</button>
+            </div>
+            <span class="rechner__zeilensumme" data-zeilensumme>0,00&nbsp;€</span>
+          </li>
+
+          <li class="rechner__zeile" data-zeile data-preis="30" data-einheit="System" data-anzahl="0" data-min="0">
+            <div class="rechner__info">
+              <span class="rechner__label">Netzwerkspeicher &amp; NAS</span>
+              <span class="rechner__hinweis">30&nbsp;€ je System und Monat</span>
+            </div>
+            <div class="rechner__steller">
+              <button type="button" class="rechner__btn" data-aktion="minus" aria-label="Anzahl Netzwerkspeicher verringern">&minus;</button>
+              <output class="rechner__anzahl" data-anzeige>0</output>
+              <button type="button" class="rechner__btn" data-aktion="plus" aria-label="Anzahl Netzwerkspeicher erhöhen">+</button>
+            </div>
+            <span class="rechner__zeilensumme" data-zeilensumme>0,00&nbsp;€</span>
+          </li>
+
+          <li class="rechner__zeile" data-zeile data-preis="5" data-einheit="Gerät" data-anzahl="0" data-min="0">
+            <div class="rechner__info">
+              <span class="rechner__label">Switches, Access Points, Router &amp; Firewalls</span>
+              <span class="rechner__hinweis">5&nbsp;€ je Gerät und Monat</span>
+            </div>
+            <div class="rechner__steller">
+              <button type="button" class="rechner__btn" data-aktion="minus" aria-label="Anzahl Netzwerkgeräte verringern">&minus;</button>
+              <output class="rechner__anzahl" data-anzeige>0</output>
+              <button type="button" class="rechner__btn" data-aktion="plus" aria-label="Anzahl Netzwerkgeräte erhöhen">+</button>
+            </div>
+            <span class="rechner__zeilensumme" data-zeilensumme>0,00&nbsp;€</span>
+          </li>
+
+          <li class="rechner__zeile" data-zeile data-preis="1" data-einheit="Gerät" data-anzahl="0" data-min="0">
+            <div class="rechner__info">
+              <span class="rechner__label">IoT-Geräte (Kameras, Zutrittsleser, Sensoren)</span>
+              <span class="rechner__hinweis">1&nbsp;€ je Gerät und Monat</span>
+            </div>
+            <div class="rechner__steller">
+              <button type="button" class="rechner__btn" data-aktion="minus" aria-label="Anzahl IoT-Geräte verringern">&minus;</button>
+              <output class="rechner__anzahl" data-anzeige>0</output>
+              <button type="button" class="rechner__btn" data-aktion="plus" aria-label="Anzahl IoT-Geräte erhöhen">+</button>
+            </div>
+            <span class="rechner__zeilensumme" data-zeilensumme>0,00&nbsp;€</span>
+          </li>
+
+          <li class="rechner__zeile" data-zeile data-preis="50" data-einheit="Anlage" data-anzahl="0" data-min="0">
+            <div class="rechner__info">
+              <span class="rechner__label">Telefonanlage (Cloud oder vor Ort)</span>
+              <span class="rechner__hinweis">50&nbsp;€ je Anlage und Monat</span>
+            </div>
+            <div class="rechner__steller">
+              <button type="button" class="rechner__btn" data-aktion="minus" aria-label="Anzahl Telefonanlagen verringern">&minus;</button>
+              <output class="rechner__anzahl" data-anzeige>0</output>
+              <button type="button" class="rechner__btn" data-aktion="plus" aria-label="Anzahl Telefonanlagen erhöhen">+</button>
+            </div>
+            <span class="rechner__zeilensumme" data-zeilensumme>0,00&nbsp;€</span>
+          </li>
+
+          <li class="rechner__zeile" data-zeile data-preis="49" data-einheit="Stunde" data-anzahl="0" data-min="0">
+            <div class="rechner__info">
+              <span class="rechner__label">Zusätzliche feste Stunden im Monat</span>
+              <span class="rechner__hinweis">3&nbsp;Stunden sind je Vertrag enthalten. Jede weitere fest gebuchte Stunde: 49&nbsp;€ netto, wie der normale Stundensatz.</span>
+            </div>
+            <div class="rechner__steller">
+              <button type="button" class="rechner__btn" data-aktion="minus" aria-label="Zusätzliche Stunden verringern">&minus;</button>
+              <output class="rechner__anzahl" data-anzeige>0</output>
+              <button type="button" class="rechner__btn" data-aktion="plus" aria-label="Zusätzliche Stunden erhöhen">+</button>
+            </div>
+            <span class="rechner__zeilensumme" data-zeilensumme>0,00&nbsp;€</span>
+          </li>
+        </ul>
+
+        <div class="rechner__summe">
+          <div>
+            <span class="rechner__summe-label">Monatsbeitrag</span>
+            <span class="rechner__summe-wert" data-summe>250,00&nbsp;€</span>
+            <span class="rechner__summe-hinweis">netto zzgl. 19&nbsp;% USt. &middot; Mindestlaufzeit 3&nbsp;Monate, danach monatlich kündbar &middot; keine Staffelpreise</span>
+          </div>
+          <div class="btn-row">
+            <button type="button" class="btn btn--ghost" data-reset>Zurücksetzen</button>
+            <a class="btn btn--primary" data-anfrage href="mailto:kontakt@clavis-itservice.de?subject=Anfrage%20Wartungsvertrag">Angebot anfragen</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="rechner__fussnote reveal" style="max-width: 52rem">
+        Unverbindliche Kalkulation, kein Angebot. Der endgültige Betrag steht nach einer kurzen Bestandsaufnahme fest. Geräte im Vertrag überwache ich laufend, Vertragskunden kommen bei Störungen zuerst dran.
+      </p>
 
       <div class="note reveal" style="margin-top: var(--sp-4)">
         <p><strong>Größere Vorhaben zum Festpreis</strong></p>
@@ -493,7 +634,7 @@
         </details>
         <details>
           <summary>Brauche ich dafür einen Wartungsvertrag?</summary>
-          <div><p>Nein. Die Wartungstermine können wir auch formlos nach Aufwand vereinbaren. Wenn Sie lieber fest planen, gibt es den Wartungsvertrag: ab 350&nbsp;€ netto im Monat mit drei Stunden inklusive, Mindestlaufzeit drei Monate, danach monatlich kündbar.</p></div>
+          <div><p>Nein. Die Wartungstermine können wir auch formlos nach Aufwand vereinbaren. Wenn Sie lieber fest planen, gibt es den Wartungsvertrag: Sie stellen <a href="#rechner">online zusammen</a>, was zu Ihrem Betrieb gehört, drei Stunden sind inklusive, weitere Stunden kosten 49&nbsp;€ netto, Mindestlaufzeit drei Monate, danach monatlich kündbar.</p></div>
         </details>
         <details>
           <summary>Wie schnell sind Sie da?</summary>
@@ -611,5 +752,6 @@
 </div>
 
 <script src="assets/js/main.js?v=2026-10-23-leiste2" defer></script>
+<script src="assets/js/rechner.js?v=2026-10-31-wartungsvertrag" defer></script>
 </body>
 </html>

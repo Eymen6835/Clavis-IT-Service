@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Preise: 49 € pro Stunde, Anfahrt ab 0 € | Clavis IT Service</title>
-<meta name="description" content="Faire, transparente Preise für IT-Hilfe zu Hause: 49 € pro Stunde inklusive 19 % MwSt. In Mannheim ohne Anfahrtspauschale, außerhalb ab 10 €.">
+<title>Preise für Privat & Unternehmen | Clavis IT Service</title>
+<meta name="description" content="Faire, transparente Preise: 49 € pro Stunde, für Privathaushalte inklusive 19 % MwSt., für Unternehmen netto zzgl. USt. In Mannheim ohne Anfahrtspauschale, außerhalb ab 10 €.">
 <link rel="canonical" href="https://clavis-itservice.de/preise">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#fbfaf7">
@@ -12,8 +12,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="Clavis IT Service">
-<meta property="og:title" content="Preise: 49 € pro Stunde, Anfahrt ab 0 € | Clavis IT Service">
-<meta property="og:description" content="Faire, transparente Preise für IT-Hilfe zu Hause: 49 € pro Stunde inklusive 19 % MwSt. In Mannheim ohne Anfahrtspauschale, Fernwartung ohne Anfahrt.">
+<meta property="og:title" content="Preise für Privat & Unternehmen | Clavis IT Service">
+<meta property="og:description" content="Faire, transparente Preise: 49 € pro Stunde, für Privathaushalte inklusive 19 % MwSt., für Unternehmen netto zzgl. USt. In Mannheim ohne Anfahrtspauschale.">
 <meta property="og:url" content="https://clavis-itservice.de/preise">
 <meta property="og:image" content="https://clavis-itservice.de/assets/img/og-image-2026-08.jpg">
 <meta property="og:image:width" content="1200">
@@ -79,7 +79,7 @@
       "@type": "WebPage",
       "@id": "https://clavis-itservice.de/preise#webpage",
       "url": "https://clavis-itservice.de/preise",
-      "name": "Preise: 49 € pro Stunde, Anfahrt ab 0 €",
+      "name": "Preise für Privathaushalte und Unternehmen",
       "isPartOf": { "@id": "https://clavis-itservice.de/#website" },
       "about": { "@id": "https://clavis-itservice.de/#business" },
       "inLanguage": "de-DE"
@@ -102,7 +102,7 @@
       "offers": [
         {
           "@type": "Offer",
-          "name": "Arbeitszeit",
+          "name": "Arbeitszeit, Privathaushalte",
           "priceSpecification": {
             "@type": "UnitPriceSpecification",
             "price": "49",
@@ -110,6 +110,18 @@
             "unitCode": "HUR",
             "valueAddedTaxIncluded": true,
             "description": "Für Privathaushalte. Vor Ort erste angefangene Stunde, danach im 15-Minuten-Takt (12,25 € je angefangene Viertelstunde). Fernwartung ab der ersten Viertelstunde. Endpreis inklusive 19 % Umsatzsteuer."
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Arbeitszeit, Unternehmen",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "49",
+            "priceCurrency": "EUR",
+            "unitCode": "HUR",
+            "valueAddedTaxIncluded": false,
+            "description": "Für Unternehmen. Nettopreis zzgl. 19 % USt. Vor Ort erste angefangene Stunde, danach im 15-Minuten-Takt (12,25 € netto je angefangene Viertelstunde). Fernwartung ab der ersten Viertelstunde. Auf Wunsch Wartungsvertrag: drei Stunden inklusive, weitere Stunden 49 € netto, Mindestlaufzeit drei Monate, danach monatlich kündbar."
           }
         },
         {
@@ -206,38 +218,105 @@
   <section class="page-head">
     <div class="wrap">
       <h1>Preise, die Sie vorher kennen.</h1>
-      <p class="lede">Ein fairer, transparenter Stundensatz für alle Termine zu Hause und per Fernwartung. Keine versteckten Kosten, keine Vertragsbindung.</p>
+      <p class="lede">Ein fairer, transparenter Stundensatz für Privathaushalte und für Unternehmen bis 10&nbsp;Mitarbeiter. Keine versteckten Kosten.</p>
+      <div class="preis-umschalter reveal" role="tablist" aria-label="Preise anzeigen für" style="margin-top: var(--sp-3)">
+        <button type="button" class="preis-tab is-aktiv" role="tab" id="preis-tab-privat" aria-selected="true" aria-controls="preise-privat" data-preistab="privat">Für Privathaushalte</button>
+        <button type="button" class="preis-tab" role="tab" id="preis-tab-unternehmen" aria-selected="false" aria-controls="preise-unternehmen" data-preistab="unternehmen" tabindex="-1">Für Unternehmen</button>
+      </div>
     </div>
   </section>
 
   <section class="section section--tight">
     <div class="wrap">
-      <div class="price-panel reveal">
-        <div>
-          <div class="price-figure">
-            <span class="price-figure__value">49 €</span>
-            <span class="price-figure__unit">pro Stunde</span>
+      <div id="preise-privat" role="tabpanel" aria-labelledby="preis-tab-privat" data-preispanel="privat">
+        <div class="price-panel reveal">
+          <div>
+            <div class="price-figure">
+              <span class="price-figure__value">49 €</span>
+              <span class="price-figure__unit">pro Stunde</span>
+            </div>
+            <p>
+              Klarer Endpreis inklusive 19 % MwSt. Vor Ort zählt die erste Stunde voll, danach geht es im fairen Viertelstundentakt zu 12,25&nbsp;€ weiter. Sind wir nach 70 Minuten fertig, rechne ich 75 Minuten ab – nicht zwei volle Stunden. Per Fernwartung rechne ich ab der ersten Viertelstunde ab.
+            </p>
+            <p class="price-figure__note">
+              Für Privathaushalte inklusive 19 % MwSt. · Für Unternehmen gelten Nettopreise zzgl. 19&nbsp;% USt., siehe Tab „Für Unternehmen“.
+            </p>
+            <div class="btn-row" style="margin-top: var(--sp-3)">
+              <a class="btn btn--primary" href="tel:+491626327036">0162 63270 36</a>
+            </div>
           </div>
-          <p>
-            Klarer Endpreis inklusive 19 % MwSt. Vor Ort zählt die erste Stunde voll, danach geht es im fairen Viertelstundentakt zu 12,25&nbsp;€ weiter. Sind wir nach 70 Minuten fertig, rechne ich 75 Minuten ab – nicht zwei volle Stunden. Per Fernwartung rechne ich ab der ersten Viertelstunde ab.
-          </p>
-          <p class="price-figure__note">
-            Für Privathaushalte inklusive 19 % MwSt. · Für Unternehmen 49&nbsp;€ netto zzgl. 19 % USt. (vorsteuerabzugsfähig).
-          </p>
-          <div class="btn-row" style="margin-top: var(--sp-3)">
-            <a class="btn btn--primary" href="tel:+491626327036">0162 63270 36</a>
-          </div>
+
+          <div class="price-panel__divider" aria-hidden="true"></div>
+
+          <ul class="price-list">
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Kostenloses Erstgespräch am Telefon:</strong> Wir besprechen vorab in Ruhe, worum es geht.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>In Mannheim 0 € Anfahrt:</strong> Keine Anfahrtspauschale in ganz Mannheim.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Erklären gehört zum Termin dazu:</strong> Ich zeige Ihnen alles verständlich und schreibe Spickzettel auf.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Ehrliche Beratung:</strong> Ich sage Ihnen offen, wenn sich eine Reparatur bei einem alten Gerät nicht mehr lohnt.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Kein Abo, keine Bindung:</strong> Sie zahlen nur die Zeit, die ich für Sie arbeite.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="preise-unternehmen" role="tabpanel" aria-labelledby="preis-tab-unternehmen" data-preispanel="unternehmen">
+        <div class="section-head reveal" style="margin-bottom: var(--sp-3)">
+          <h2>Ein Stundensatz für alle Termine</h2>
         </div>
 
-        <div class="price-panel__divider" aria-hidden="true"></div>
+        <div class="price-panel reveal">
+          <div>
+            <div class="price-figure">
+              <span class="price-figure__value">49 €</span>
+              <span class="price-figure__unit">netto pro Stunde</span>
+            </div>
+            <p>
+              Zzgl. 19 % USt., auf der Rechnung gesondert ausgewiesen und vorsteuerabzugsfähig. Vor Ort zählt die erste Stunde voll, danach geht es im Viertelstundentakt zu 12,25&nbsp;€ netto weiter. Per Fernwartung rechne ich ab der ersten Viertelstunde ab.
+            </p>
+            <p class="price-figure__note">
+              Für Unternehmen netto zzgl. 19 % USt. · Für Privathaushalte 49&nbsp;€ inklusive MwSt., siehe Tab „Für Privathaushalte“.
+            </p>
+            <div class="btn-row" style="margin-top: var(--sp-3)">
+              <a class="btn btn--primary" href="tel:+491626327036">0162 63270 36</a>
+              <a class="btn btn--ghost" href="geschaeftskunden">Leistungen für Unternehmen</a>
+            </div>
+          </div>
 
-        <ul class="price-list">
-          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Kostenloses Erstgespräch am Telefon:</strong> Wir besprechen vorab in Ruhe, worum es geht.</span></li>
-          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>In Mannheim 0 € Anfahrt:</strong> Keine Anfahrtspauschale in ganz Mannheim.</span></li>
-          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Erklären gehört zum Termin dazu:</strong> Ich zeige Ihnen alles verständlich und schreibe Spickzettel auf.</span></li>
-          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Ehrliche Beratung:</strong> Ich sage Ihnen offen, wenn sich eine Reparatur bei einem alten Gerät nicht mehr lohnt.</span></li>
-          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Kein Abo, keine Bindung:</strong> Sie zahlen nur die Zeit, die ich für Sie arbeite.</span></li>
-        </ul>
+          <div class="price-panel__divider" aria-hidden="true"></div>
+
+          <ul class="price-list">
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Vorsteuerabzugsfähig:</strong> Die Umsatzsteuer ist auf der Rechnung gesondert ausgewiesen.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Per Überweisung</strong> innerhalb von 14 Tagen.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Abends und am Wochenende</strong> zum gleichen Satz.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>In Mannheim 0 € Anfahrt</strong>, außerhalb die gleiche Staffel wie für Privathaushalte, siehe unten. Fernwartung ohne Anfahrt.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Ohne Vertrag keine Laufzeit, kein Grundbetrag.</strong> Sie investieren nur in die Zeit, die ich für Sie arbeite.</span></li>
+          </ul>
+        </div>
+
+        <div class="section-head reveal" style="margin-top: var(--sp-5); margin-bottom: var(--sp-3)">
+          <h2>Wartungsvertrag für feste Planung</h2>
+          <p>Drei Stunden sind je Vertrag inklusive, was darüber hinausgeht, kostet 49&nbsp;€ netto pro Stunde, wie der normale Stundensatz. Mindestlaufzeit drei Monate, danach monatlich kündbar.</p>
+        </div>
+
+        <div class="price-panel reveal">
+          <div>
+            <h3 style="margin-bottom: 0.5rem">Was im Vertrag enthalten ist</h3>
+            <p>
+              Ein fester Wartungstermin im Quartal, laufende Überwachung von Datensicherung, Festplatten und Virenschutz, sowie Vorrang bei Störungen. Den genauen Monatsbetrag für Ihren Betrieb stellen Sie online zusammen.
+            </p>
+            <div class="btn-row" style="margin-top: var(--sp-3)">
+              <a class="btn btn--primary" href="geschaeftskunden#rechner">Wartungsvertrag online berechnen</a>
+            </div>
+          </div>
+
+          <div class="price-panel__divider" aria-hidden="true"></div>
+
+          <ul class="price-list">
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Wartungstermin einmal im Quartal:</strong> Updates, Virenschutz, Datensicherung, Festplatten und Reinigung, danach ein kurzer Bericht.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Drei Stunden inklusive</strong>, zum Beispiel für ein neues Postfach oder einen neuen Mitarbeiter.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Vorrang bei Störungen:</strong> Vertragskunden kommen zuerst dran.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Nach Standorten, Geräten und Stunden berechnet,</strong> keine Staffelpreise. Alle Positionen im Rechner auf der Unternehmensseite.</span></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -295,7 +374,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" data-preispanel="privat">
     <div class="wrap">
       <div class="section-head reveal">
         <h2>Beispiele aus dem Alltag</h2>
@@ -339,6 +418,44 @@
         </p>
         <p>
           <a class="arrow-link" href="leistungen">Alle Leistungen für Ihr Zuhause ansehen</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-preispanel="unternehmen">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>Beispiele für Unternehmen</h2>
+        <p>Nettopreise zzgl. 19 % USt. Für laufende Betreuung lohnt sich oft der Wartungsvertrag.</p>
+      </div>
+
+      <ul class="example-list reveal">
+        <li>
+          <div class="example-list__label">Neuen Arbeitsplatz einrichten<span>Rechner einrichten, Zugänge anlegen, Programme installieren</span></div>
+          <div class="example-list__value">ca. 1–2 Std. · 49–98 €</div>
+        </li>
+        <li>
+          <div class="example-list__label">Drucker ins Firmennetzwerk einbinden<span>Einrichtung für alle Arbeitsplätze im Büro</span></div>
+          <div class="example-list__value">ca. 1 Std. · ab 49 €</div>
+        </li>
+        <li>
+          <div class="example-list__label">Microsoft 365 oder E-Mail einrichten<span>Neues Postfach oder neuer Mitarbeiter</span></div>
+          <div class="example-list__value">ca. 1 Std. · ab 49 €</div>
+        </li>
+        <li>
+          <div class="example-list__label">WLAN mit Gästenetz einrichten<span>Eigenes Netz für Kunden, getrennt vom Firmennetz</span></div>
+          <div class="example-list__value">ca. 1–2 Std. · 49–98 €</div>
+        </li>
+        <li>
+          <div class="example-list__label">Kurze Hilfe per Fernwartung<span>Eine Einstellung, ein Update, eine Frage</span></div>
+          <div class="example-list__value">ab 12,25 €</div>
+        </li>
+      </ul>
+
+      <div class="note reveal" style="margin-top: var(--sp-4); max-width: 52rem">
+        <p>
+          <a class="arrow-link" href="geschaeftskunden">Alle Leistungen für Unternehmen ansehen</a>
         </p>
       </div>
     </div>
@@ -430,6 +547,7 @@
           <a class="btn btn--primary" href="tel:+491626327036">0162 63270 36</a>
           <span class="tel-karte"><img src="assets/img/qr-anrufen.svg" width="25" height="25" alt="QR-Code zum Anrufen"><span><span class="tel-karte__label">Scannen und anrufen</span><a href="tel:+491626327036">0162 63270 36</a></span></span>
           <a class="btn btn--ghost" href="leistungen">Für Privatkunden</a>
+          <a class="btn btn--ghost" href="geschaeftskunden">Für Unternehmen</a>
         </div>
       </div>
     </div>
@@ -496,5 +614,6 @@
 </div>
 
 <script src="assets/js/main.js?v=2026-10-23-leiste2" defer></script>
+<script src="assets/js/preis-tabs.js?v=2026-10-31-preise" defer></script>
 </body>
 </html>
