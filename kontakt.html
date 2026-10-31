@@ -7,7 +7,7 @@
 <meta name="description" content="IT-Hilfe anfragen: Telefon 0162 63270 36, WhatsApp oder kontakt@clavis-itservice.de. Telefonisch täglich von 8 bis 20 Uhr erreichbar, Termine nach Vereinbarung.">
 <link rel="canonical" href="https://clavis-itservice.de/kontakt">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#fbfaf7">
+<meta name="theme-color" content="#0a192f">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
@@ -29,7 +29,7 @@
 <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/style.css?v=2026-10-31-clavis-logo">
+<link rel="stylesheet" href="assets/css/style.css?v=2026-10-31-modern">
 
 <script src="assets/js/darstellung.js?v=2026-10-18-hell"></script>
 
@@ -287,7 +287,7 @@
         <p>Wenn ich gerade nicht rangehe, rufe ich zurück, meistens innerhalb einer Stunde.</p>
         <div class="btn-row" style="justify-content: center">
           <a class="btn btn--primary" href="tel:+491626327036">0162 63270 36</a>
-          <span class="tel-karte"><img src="assets/img/qr-anrufen.svg" width="25" height="25" alt="QR-Code zum Anrufen"><span><span class="tel-karte__label">Scannen und anrufen</span><a href="tel:+491626327036">0162 63270 36</a></span></span>
+          <a class="btn btn--wa" href="https://wa.me/491626327036" rel="noopener"><svg aria-hidden="true" class="btn-icon"><use href="#i-whatsapp"/></svg> WhatsApp</a>
           <a class="btn btn--ghost" href="preise">Preise ansehen</a>
         </div>
       </div>
@@ -296,52 +296,69 @@
 
 </main>
 
-<footer class="footer">
+<footer class="footer-modern">
   <div class="wrap">
-    <div class="footer__grid">
-      <div class="footer__intro">
-        <a class="brand" href="./">
-          <img class="brand__mark" src="assets/img/clavis-icon.png" srcset="assets/img/clavis-icon.png 1x, assets/img/icon-192.png 2x" width="46" height="46" alt="Clavis IT Service Logo">
+    <div class="footer-modern__grid">
+      <div class="footer-modern__brand">
+        <a class="brand" href="./" style="margin-bottom: var(--sp-2); display: inline-flex;">
+          <img class="brand__mark" src="assets/img/clavis-icon.png" width="42" height="42" alt="Clavis IT Service Logo">
           <span class="brand__text">
-            <span class="brand__name">Clavis <span>IT Service</span></span>
-        <span class="brand__tag">IT-Service&nbsp;&#183; Zuverlässig&nbsp;&#183; Vor&nbsp;Ort</span>
+            <span class="brand__name" style="color: #ffffff;">Clavis <span style="color: #fbbf24;">IT Service</span></span>
+            <span class="brand__tag" style="color: #94a3b8;">IT-Service · Zuverlässig · Vor Ort</span>
           </span>
         </a>
-        <p>Ihre persönliche IT-Haushaltshilfe für Computer, Smartphone und WLAN in Mannheim und Umgebung.</p>
+        <p>Ihr persönlicher IT-Partner für Privathaushalte, Senioren und Unternehmen in Mannheim und der Rhein-Neckar-Region.</p>
+        <div class="footer-hours-badge">
+          <span class="pulse-dot" style="width: 7px; height: 7px;"></span>
+          <span>Täglich erreichbar: 8:00 – 20:00 Uhr</span>
+        </div>
       </div>
 
       <div>
-        <h2>Seiten</h2>
+        <h4>Privatkunden</h4>
         <ul>
-          <li><a href="./">Start</a></li>
-          <li><a href="geschaeftskunden">Unternehmen</a></li>
-          <li><a href="leistungen">Privatkunden</a></li>
-          <li><a href="preise">Preise</a></li>
-          <li><a href="ueber-mich">Über mich</a></li>
-          <li><a href="kontakt">Kontakt</a></li>
+          <li><a href="leistungen#einrichtung">Computer &amp; Laptop Hilfe</a></li>
+          <li><a href="leistungen#einrichtung">Smartphone &amp; Tablet</a></li>
+          <li><a href="leistungen#probleme">WLAN &amp; Heimnetzwerk</a></li>
+          <li><a href="leistungen#einrichtung">Drucker &amp; Scanner</a></li>
+          <li><a href="leistungen#sicherheit">Sicherheit &amp; Virenschutz</a></li>
+          <li><a href="leistungen#beratung">Senioren-IT-Hilfe</a></li>
         </ul>
       </div>
 
-      <div class="footer__kontakt">
-        <h2>Kontakt</h2>
+      <div>
+        <h4>Unternehmen (B2B)</h4>
         <ul>
-          <li><a href="tel:+491626327036">0162 63270 36</a></li>
-          <li><a href="https://wa.me/491626327036" rel="noopener">WhatsApp</a></li>
+          <li><a href="geschaeftskunden#arbeitsplaetze">Arbeitsplätze &amp; Hardware</a></li>
+          <li><a href="geschaeftskunden#netzwerk">Firmennetzwerk &amp; VPN</a></li>
+          <li><a href="geschaeftskunden#cloud">Microsoft 365 &amp; Cloud</a></li>
+          <li><a href="geschaeftskunden#sicherheit">Datensicherung &amp; DSGVO</a></li>
+          <li><a href="geschaeftskunden#erechnung">E-Rechnung Pflicht 2025</a></li>
+          <li><a href="geschaeftskunden#betreuung">Wartung &amp; Notfall-Service</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Kontakt &amp; Standort</h4>
+        <ul>
+          <li><a href="tel:+491626327036" style="color: #fbbf24; font-weight: 600;">0162 63270 36</a></li>
+          <li><a href="https://wa.me/491626327036" rel="noopener">WhatsApp Chat</a></li>
           <li><a href="mailto:kontakt@clavis-itservice.de">kontakt@clavis-itservice.de</a></li>
-          <li>Termine nach Vereinbarung, telefonisch täglich von 8 bis 20 Uhr erreichbar</li>
+          <li>Mannheimer Straße 57a<br>68309 Mannheim</li>
+          <li><a href="preise">Preise (49 € / Std.)</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="footer__bottom">
-      <p>© 2026 Clavis IT Service · Eymen Kumaru</p>
-      <ul>
+    <div class="footer-modern__bottom">
+      <p>© 2026 Clavis IT Service · Inhaber: Eymen Kumaru · Alle Rechte vorbehalten.</p>
+      <ul class="footer-modern__bottom-links">
         <li><a href="impressum">Impressum</a></li>
         <li><a href="datenschutz">Datenschutz</a></li>
+        <li><a href="kontakt">Kontakt</a></li>
       </ul>
-      <p class="footer__privacy">Diese Website setzt keine Cookies und verwendet keine Analyse-Werkzeuge.</p>
+      <p style="font-size: 0.8rem; color: #64748b;">Keine Cookies · Kein Tracking · 100% datensparsam</p>
     </div>
-    <p class="footer__wortmarke" aria-hidden="true">Clavis IT</p>
   </div>
 </footer>
 
