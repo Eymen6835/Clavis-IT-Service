@@ -1,4 +1,4 @@
-# Fix&Fertig IT | https://fixundfertig-it.de
+# Clavis IT Service | https://clavis-itservice.de
 
 # Alle Suchmaschinen dürfen die gesamte Website lesen.
 User-agent: *
@@ -36,4 +36,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://fixundfertig-it.de/sitemap.xml
+Sitemap: https://clavis-itservice.de/sitemap.xml

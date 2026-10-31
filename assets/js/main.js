@@ -25,7 +25,7 @@
     vorladen();
   })();
 
-  var STORAGE_KEY = 'ffit-theme';
+  var STORAGE_KEY = 'clavis-theme';
   var toggle = document.querySelector('.theme-toggle');
   var wechselZeit = 0;
 

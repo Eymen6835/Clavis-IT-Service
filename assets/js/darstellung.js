@@ -3,7 +3,7 @@
   var d = document.documentElement;
   d.className += ' js';
   var t = null;
-  try { t = localStorage.getItem('ffit-theme'); } catch (e) {  }
+  try { t = localStorage.getItem('clavis-theme'); } catch (e) {  }
   if (t !== 'dark') t = 'light';
   d.setAttribute('data-theme', t);
   if (t === 'dark') {

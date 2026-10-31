@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 642.52 219.21" width="642.52" height="219.21" role="img" aria-labelledby="logo-titel">
-  <title id="logo-titel">Fix&amp;Fertig IT - IT-Service, zuverlaessig, vor Ort</title>
+  <title id="logo-titel">Clavis IT Service - IT-Service, zuverlaessig, vor Ort</title>
   <defs>
     <style>
       @font-face {
@@ -35,7 +35,7 @@
     <circle cx="120" cy="118" r="14" fill="#E8A33D"/>
   </g>
 
-  <text class="wm"  x="215.433" y="43.917"  fill="#0F1B2D">Fix&amp;Fertig</text>
-  <text class="wm"  x="215.433" y="133.017" fill="#E8A33D">IT</text>
+  <text class="wm"  x="215.433" y="43.917"  fill="#0F1B2D">Clavis</text>
+  <text class="wm"  x="215.433" y="133.017" fill="#E8A33D">IT Service</text>
   <text class="tag" x="215.433" y="209.220" fill="#495568">IT-SERVICE &#183; ZUVERL&#196;SSIG &#183; VOR ORT</text>
 </svg>

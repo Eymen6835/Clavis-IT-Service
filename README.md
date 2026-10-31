@@ -1,6 +1,6 @@
-﻿# Fix&Fertig IT – Website
+﻿# Clavis IT Service – Website
 
-Website von **Fix&Fertig IT** (Eymen Kumaru) in reinem HTML, CSS und JavaScript – inklusive aller Unterseiten, Schriften, Bilder (AVIF/WebP/JPG/SVG), interaktiver Anfahrtskarte und Hell-/Dunkel-Modus.
+Website von **Clavis IT Service** (Eymen Kumaru) in reinem HTML, CSS und JavaScript – inklusive aller Unterseiten, Schriften, Bilder (AVIF/WebP/JPG/SVG), interaktiver Anfahrtskarte und Hell-/Dunkel-Modus.
 
 ## Enthaltene Seiten
 
@@ -18,7 +18,7 @@ Website von **Fix&Fertig IT** (Eymen Kumaru) in reinem HTML, CSS und JavaScript 
 
 ```bash
 npm start
-# Fix&Fertig IT – Website
+# Clavis IT Service – Website
 node server.js
 ```
 
