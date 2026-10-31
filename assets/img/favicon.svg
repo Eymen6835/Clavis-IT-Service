@@ -1,21 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Clavis IT Service">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32" role="img" aria-label="Clavis IT Service">
   <title>Clavis IT Service</title>
-  <!-- Das vollständige Logo-Zeichen: Schildkontur, drei Knoten, Verbindungs-
-       linien und der bernsteinfarbene Mittelknoten. Linienstärken und Knoten
-       sind gegenüber dem Original kräftiger gesetzt (Kontur 15 statt 8,
-       Linien 10 statt 6), weil das Zeichen im Browser-Tab nur rund 32 Pixel
-       hoch dargestellt wird. Mit den Originalstärken wäre die Kontur dort
-       dünner als ein Pixel. -->
-  <rect width="32" height="32" rx="8" fill="#0F1B2D"/>
-  <g transform="translate(2.95 2.95) scale(0.10874)">
-    <path d="M120 17 215 54 215 120C215 174 174 207 120 223 66 207 25 174 25 120L25 54Z"
-          fill="none" stroke="#FFFFFF" stroke-width="15" stroke-linejoin="round"/>
-    <g fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round">
-      <path d="M120 72 120 118"/><path d="M82 150 120 118"/><path d="M158 150 120 118"/>
-    </g>
-    <circle cx="120" cy="72"  r="13" fill="#FFFFFF"/>
-    <circle cx="82"  cy="150" r="13" fill="#FFFFFF"/>
-    <circle cx="158" cy="150" r="13" fill="#FFFFFF"/>
-    <circle cx="120" cy="118" r="19" fill="#E8A33D"/>
-  </g>
+  <image href="data:image/png;base64,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" width="64" height="64"/>
 </svg>
