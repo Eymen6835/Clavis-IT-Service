@@ -1,10 +1,11 @@
-﻿# Clavis IT Service – Website
+# Clavis IT Service – Website
 
 Website von **Clavis IT Service** (Eymen Kumaru) in reinem HTML, CSS und JavaScript – inklusive aller Unterseiten, Schriften, Bilder (AVIF/WebP/JPG/SVG), interaktiver Anfahrtskarte und Hell-/Dunkel-Modus.
 
 ## Enthaltene Seiten
 
 - [`index.html`](./index.html) – Startseite (`/`)
+- [`geschaeftskunden.html`](./geschaeftskunden.html) – IT-Service für Unternehmen (`/geschaeftskunden`)
 - [`leistungen.html`](./leistungen.html) – Leistungen für Zuhause (`/leistungen`)
 - [`preise.html`](./preise.html) – Preise & interaktive Einzugsgebietskarte (`/preise`)
 - [`ueber-mich.html`](./ueber-mich.html) – Über mich (`/ueber-mich`)
