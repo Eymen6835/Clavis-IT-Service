@@ -613,3 +613,130 @@ body.is-locked .callbar { right: var(--sb, 0px); }
 .header .burger { background: transparent; border: 2px solid var(--line); box-shadow: none; }
 
 .page-head h1 { font-size: clamp(2.6rem, 1.7rem + 3.2vw, 4.4rem); }
+
+/* =====================================================================
+   Helle Fassung: Startbereich, Seitenköpfe, Kontaktband und Fuß
+   auf hellem Grund; Blau bleibt für die Schilder selbst.
+   ===================================================================== */
+:root {
+  --flaeche:        #eaf1f8;
+  --flaeche-titel:  #0b3a69;
+  --fuss:           #f2f5f8;
+  --schild-karte:   #0b4f8f;
+  --schild-hover:   #083d70;
+  --t-ink: #18232d; --t-ink-muted: #44525f; --t-ink-subtle: #56636f;
+  --t-accent: #0b4f8f; --t-accent-hover: #083d70; --t-accent-ink: #ffffff;
+  --t-accent-text: #0b4f8f; --t-accent-icon: #0b4f8f; --t-accent-wash: rgba(11, 79, 143, 0.09);
+  --t-line: #d3dbe4; --t-line-strong: #a9b6c4; --t-raised: #ffffff; --t-sunken: #edf1f5;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --flaeche: #12243a; --flaeche-titel: #ffffff; --fuss: #0a1520;
+    --schild-karte: #1d5f9f; --schild-hover: #2468ad;
+    --t-ink: #eef3f8; --t-ink-muted: #c5d0db; --t-ink-subtle: #a3b0be;
+    --t-accent: #7db3f0; --t-accent-hover: #9bc5f5; --t-accent-ink: #0d1823;
+    --t-accent-text: #8dbdf2; --t-accent-icon: #8dbdf2; --t-accent-wash: rgba(125, 179, 240, 0.12);
+    --t-line: #22344a; --t-line-strong: #3a5068; --t-raised: #15283a; --t-sunken: #111f2d;
+  }
+}
+:root[data-theme='dark'] {
+  --flaeche: #12243a; --flaeche-titel: #ffffff; --fuss: #0a1520;
+  --schild-karte: #1d5f9f; --schild-hover: #2468ad;
+  --t-ink: #eef3f8; --t-ink-muted: #c5d0db; --t-ink-subtle: #a3b0be;
+  --t-accent: #7db3f0; --t-accent-hover: #9bc5f5; --t-accent-ink: #0d1823;
+  --t-accent-text: #8dbdf2; --t-accent-icon: #8dbdf2; --t-accent-wash: rgba(125, 179, 240, 0.12);
+  --t-line: #22344a; --t-line-strong: #3a5068; --t-raised: #15283a; --t-sunken: #111f2d;
+}
+
+/* Umkehrung aufheben: normale Farben auch in diesen Bereichen */
+.page-head,
+.hero--weiche,
+.cta-band,
+.footer {
+  --ink: var(--t-ink); --ink-muted: var(--t-ink-muted); --ink-subtle: var(--t-ink-subtle);
+  --accent: var(--t-accent); --accent-hover: var(--t-accent-hover); --accent-ink: var(--t-accent-ink);
+  --accent-text: var(--t-accent-text); --accent-icon: var(--t-accent-icon); --accent-wash: var(--t-accent-wash);
+  --line: var(--t-line); --line-strong: var(--t-line-strong);
+  --bg-raised: var(--t-raised); --bg-sunken: var(--t-sunken);
+  color: var(--ink);
+}
+
+/* Startseite */
+.hero.hero--weiche { background: var(--flaeche); }
+.hero--weiche .hero__claim { color: var(--flaeche-titel); }
+.hero--weiche .hero__zusatz { color: var(--ink); }
+.hero--weiche .hero__kicker { color: var(--ink-muted); }
+.weiche__frage { color: var(--ink); }
+
+.weiche__karte {
+  --ink: #ffffff;
+  --ink-muted: rgba(255, 255, 255, 0.9);
+  background: var(--schild-karte);
+  color: #fff;
+}
+.weiche__karte:hover { background: var(--schild-hover); color: #fff; }
+.weiche__karte:focus-visible { outline: none; background: var(--schild-hover); box-shadow: inset 0 0 0 4px #fff; }
+.weiche__icon { background: #fff; color: #0b4f8f; }
+.weiche__titel { color: #fff; }
+.weiche__text { color: rgba(255, 255, 255, 0.9); }
+.weiche__los { color: #fff; }
+
+.weiche__hinweis { color: var(--ink-muted); }
+.weiche__hinweis a { color: var(--accent-text); }
+.weiche__hinweis a:hover { color: var(--ink); }
+
+@media (min-width: 84em), (min-width: 64em) and (hover: hover) and (pointer: fine) {
+  .hero--weiche .weiche__qr { background: var(--bg-raised); border: 2px solid var(--line); }
+  .hero--weiche .hero__kontakt-label { color: var(--accent-text); }
+  .hero--weiche .hero__nummer { color: var(--flaeche-titel); }
+  .hero--weiche .hero__wa { color: var(--ink-muted); }
+  .hero--weiche .hero__wa:hover { color: var(--ink); }
+}
+
+/* Unterseiten-Kopf */
+.page-head { background: var(--flaeche); border-bottom: 0; }
+.page-head h1 { color: var(--flaeche-titel); }
+.page-head .lede { color: var(--ink-muted); }
+.page-head .tel-karte { background: var(--bg-raised); border: 2px solid var(--line); }
+.page-head .tel-karte a { color: var(--ink); }
+.page-head .tel-karte__label { color: var(--ink-subtle); }
+.sprungleiste__titel { color: var(--ink-subtle); }
+.sprungleiste a { background: var(--bg-raised); border-color: var(--line-strong); color: var(--accent-text); }
+.sprungleiste a:hover { background: var(--schild-karte); border-color: var(--schild-karte); color: #fff; }
+.page-head .preis-umschalter { background: var(--bg-raised); border: 2px solid var(--line); }
+.page-head .preis-tab { color: var(--ink); }
+.page-head .preis-tab.is-aktiv,
+.page-head .preis-tab[aria-selected='true'] { background: var(--schild-karte); color: #fff; }
+
+/* Kontaktband */
+.cta-band,
+:root[data-theme='dark'] .cta-band {
+  --cta-grund: var(--flaeche);
+  --cta-schrift: var(--t-ink);
+  background: var(--flaeche);
+  border-top: 6px solid var(--schild-karte);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .cta-band { --cta-grund: var(--flaeche); --cta-schrift: var(--t-ink); }
+}
+.cta-band h2 { color: var(--flaeche-titel); }
+.cta-band p { color: var(--ink-muted); }
+.cta-band .btn--primary { background: var(--schild-karte); border-color: var(--schild-karte); color: #fff; }
+.cta-band .btn--primary:hover { background: var(--schild-hover); border-color: var(--schild-hover); color: #fff; }
+.cta-band .btn--ghost { border-color: var(--accent); color: var(--accent-text); }
+.cta-band .btn--ghost:hover { background: var(--accent-wash); border-color: var(--accent); color: var(--accent-text); }
+.cta-band .tel-karte { background: var(--bg-raised); border: 2px solid var(--line); }
+.cta-band .tel-karte a { color: var(--ink); }
+.cta-band .tel-karte__label { color: var(--ink-subtle); }
+.cta-band :focus-visible { outline-color: var(--accent); }
+
+/* Fuß */
+.footer,
+:root[data-theme='dark'] .footer { background: var(--fuss); border-top: 4px solid var(--schild-karte); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .footer { background: var(--fuss); }
+}
+.footer h2 { color: var(--flaeche-titel); }
+.footer a:hover { color: var(--accent-text); }
+.footer__wortmarke { color: color-mix(in srgb, var(--schild-karte) 9%, transparent); }
