@@ -1671,6 +1671,30 @@ a.card:hover,
   letter-spacing: 0.04em;
 }
 
+.karte__radius,
+.karte__kreis-text,
+.karte__massstab { pointer-events: none; }
+.karte__kreis { fill: none; stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.karte__kreis--10 { fill: var(--accent-wash); stroke: var(--accent); stroke-dasharray: 6 5; }
+.karte__kreis--25 { fill: color-mix(in srgb, var(--ink) 3%, transparent); stroke: var(--ink-subtle); stroke-dasharray: 3 5; }
+.karte__kreis-text text,
+.karte__massstab text {
+  fill: var(--ink-subtle);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  paint-order: stroke;
+  stroke: var(--karte-grund);
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+.karte__kreis-text text:first-child { fill: var(--accent-text); }
+.karte__massstab path { fill: none; stroke: var(--ink-subtle); stroke-width: 1.5; }
+.karte__hinweis { margin-top: 0.35rem; font-size: 0.875rem; color: var(--ink-subtle); }
+.karte[data-aktiv='10'] .karte__kreis--25,
+.karte[data-aktiv='15'] .karte__kreis--10 { opacity: 0.35; transition: opacity 0.2s var(--ease); }
+
 .karte__wege line { stroke: var(--line-strong); stroke-width: 1.5; stroke-dasharray: 1; transition: opacity 0.3s var(--ease) 0.25s; }
 
 .ort { cursor: pointer; outline: none; transition: opacity 0.3s var(--ease) 0.25s; }
@@ -1871,6 +1895,7 @@ a.card:hover,
 @media (prefers-reduced-motion: no-preference) {
 
   .karte.is-visible .karte__fluss { animation: netz-einblenden 0.8s ease-out both; }
+  .karte.is-visible :is(.karte__radius, .karte__kreis-text) { animation: netz-einblenden 0.9s ease-out 0.15s both; }
   .karte.is-visible .karte__wege line { animation: zeichnen var(--v) var(--ease-out) 0.35s both; }
   .karte.is-visible .ort:not(.ort--start) { animation: karte-ort 0.45s var(--ease-out) calc(0.35s + var(--v)) both; }
   .karte.is-visible .ort--start .ort__punkt { animation: karte-auf 0.5s var(--ease-out) both; }
