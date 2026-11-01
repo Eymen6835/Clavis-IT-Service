@@ -3127,3 +3127,5 @@ body { padding-bottom: 0; }
   .hero--weiche .hero__nummer { font-size: 1.7rem; }
   .hero--weiche h1 { padding-right: 25rem; }
 }
+.weiche__text { margin-bottom: var(--sp-2); }
+@media (max-width: 40em) { .weiche__text { margin-bottom: 0.5rem; } }
