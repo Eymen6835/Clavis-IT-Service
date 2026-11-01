@@ -3100,3 +3100,30 @@ body { padding-bottom: 0; }
   .weiche__preis { font-size: 0.875rem; margin-bottom: 0.35rem; }
   .weiche__los { padding: 0.65rem 1rem; font-size: 1rem; }
 }
+/* QR-Kontakt in der Weiche: nur am Desktop (wie im übrigen Hero), oben rechts neben dem Titel */
+@media (min-width: 84em), (min-width: 64em) and (hover: hover) and (pointer: fine) {
+  .hero--weiche .weiche__hinweis { display: none; }
+  .hero--weiche .weiche__qr {
+    position: absolute;
+    top: 0.4rem;
+    right: 0;
+    margin: 0;
+    gap: var(--sp-2);
+    padding: 0.75rem 1.4rem 0.75rem 0.75rem;
+    background: color-mix(in srgb, var(--bg-raised) 92%, transparent);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    border: 1px solid var(--line-strong);
+    box-shadow: var(--shadow-md);
+  }
+  .hero--weiche .hero__qr { width: 5.25rem; height: 5.25rem; }
+  .hero--weiche .hero__kontakt-label {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-text);
+  }
+  .hero--weiche .hero__nummer { font-size: 1.7rem; }
+  .hero--weiche h1 { padding-right: 25rem; }
+}
