@@ -81,14 +81,14 @@
       ],
       "offers": {
         "@type": "Offer",
-        "name": "IT-Betreuung nach Aufwand",
+        "name": "IT-Wartungsvertrag für Unternehmen",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "49.00",
+          "minPrice": "250",
           "priceCurrency": "EUR",
-          "unitCode": "HUR",
+          "unitCode": "MON",
           "valueAddedTaxIncluded": false,
-          "description": "Nettopreis je Stunde zzgl. 19 % USt. Vor Ort erste angefangene Stunde, danach im 15-Minuten-Takt (12,25 € netto je angefangene Viertelstunde). Fernwartung ab der ersten Viertelstunde."
+          "description": "Für Unternehmen ausschließlich im Wartungsvertrag. Monatlicher Betrag nach Standorten und Geräten, ab 250 € netto je Standort, zzgl. 19 % USt. Drei Stunden inklusive, weitere Stunden 49 € netto, Mindestlaufzeit drei Monate, danach monatlich kündbar."
         }
       },
       "hasOfferCatalog": {
@@ -106,7 +106,7 @@
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Umzug und Neueröffnung" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Regelmäßige Wartung: Updates, Virenschutz, Datensicherung, Verschleißprüfung" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beschaffung im Kundenauftrag: Geräte aussuchen, vergleichen, bestellen" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Laufende IT-Betreuung ohne feste Laufzeit" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Laufende IT-Betreuung im Wartungsvertrag" } },
           { "@type": "Offer", "name": "Wartungsvertrag", "itemOffered": { "@type": "Service", "name": "IT-Wartungsvertrag: Wartungstermin einmal im Quartal, Überwachung, Updates, geprüfte Datensicherung, drei Stunden inklusive" },
             "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "EUR", "unitCode": "MON", "valueAddedTaxIncluded": false,
               "description": "Monatlicher Betrag nach individueller Zusammenstellung, online berechenbar. Netto zzgl. 19 % USt., drei Stunden inklusive, weitere Stunden 49 € netto, Mindestlaufzeit drei Monate, danach monatlich kündbar." } }
@@ -120,25 +120,25 @@
         { "@type": "Question", "name": "Ab welcher Betriebsgröße lohnt sich das?",
           "acceptedAnswer": { "@type": "Answer", "text": "Ab einem Arbeitsplatz. Ein Ein-Personen-Betrieb mit einem Rechner, einem Drucker und einem Postfach ist ein typischer Auftrag. Nach oben liegt die sinnvolle Grenze bei Unternehmen bis 10 Mitarbeitern. Bei größeren Betrieben sage ich Ihnen offen, ob ich der richtige Ansprechpartner bin." } },
         { "@type": "Question", "name": "Was kostet die Bestandsaufnahme?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Nichts. Die Bestandsaufnahme in Ihrem Betrieb und der schriftliche Vorschlag mit Preisrahmen sind für Unternehmen kostenlos und unverbindlich. Erst wenn Sie mich beauftragen, rechne ich nach Stundensatz oder zum vereinbarten Festpreis ab." } },
+          "acceptedAnswer": { "@type": "Answer", "text": "Nichts. Die Bestandsaufnahme in Ihrem Betrieb und der schriftliche Vorschlag mit Preisrahmen sind für Unternehmen kostenlos und unverbindlich. Kosten entstehen erst mit dem Wartungsvertrag." } },
         { "@type": "Question", "name": "Rechnen Sie netto oder brutto ab?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Für Unternehmen gelten Nettopreise: 49 € pro Stunde zzgl. 19 % USt. Auf der Rechnung ist die Umsatzsteuer gesondert ausgewiesen und damit für Sie vorsteuerabzugsfähig." } },
+          "acceptedAnswer": { "@type": "Answer", "text": "Für Unternehmen gelten Nettopreise zzgl. 19 % USt.: der monatliche Betrag des Wartungsvertrags und Stunden über die drei inklusiven hinaus mit 49 € netto. Auf der Rechnung ist die Umsatzsteuer gesondert ausgewiesen und damit für Sie vorsteuerabzugsfähig." } },
         { "@type": "Question", "name": "Was gehört zur regelmäßigen Wartung?",
           "acceptedAnswer": { "@type": "Answer", "text": "Ein fester Termin im Takt Ihrer Wahl, meistens quartalsweise. Geprüft werden Updates für Windows und die Programme, Virenschutz, Datensicherung samt Rückspieltest, Zustand der Festplatten, Router und Access Points sowie Drucker und Verbrauchsmaterial. Dazu die Reinigung der Geräte, damit sie lange halten. Danach bekommen Sie einen kurzen Bericht, was ich erledigt habe und was als Nächstes ansteht." } },
         { "@type": "Question", "name": "Brauche ich dafür einen Wartungsvertrag?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Nein. Die Wartungstermine können wir auch formlos nach Aufwand vereinbaren. Wenn Sie lieber fest planen, gibt es den Wartungsvertrag: Sie stellen online zusammen, was zu Ihrem Betrieb gehört, drei Stunden sind inklusive, weitere Stunden kosten 49 € netto, Mindestlaufzeit drei Monate, danach monatlich kündbar." } },
+          "acceptedAnswer": { "@type": "Answer", "text": "Ja. Für Unternehmen arbeite ich ausschließlich im Wartungsvertrag. Sie stellen online zusammen, was zu Ihrem Betrieb gehört, drei Stunden sind inklusive, weitere Stunden kosten 49 € netto, Mindestlaufzeit drei Monate, danach monatlich kündbar." } },
         { "@type": "Question", "name": "Wie schnell sind Sie da?",
           "acceptedAnswer": { "@type": "Answer", "text": "In der Regel ist ein Termin am selben oder am nächsten Tag möglich. In dringenden Fällen sagen Sie es mir am Telefon, dann priorisiere ich Ihr Anliegen. Sie erfahren am Telefon verbindlich, wann ich da bin. Vieles erledige ich auch sofort per Fernwartung." } },
         { "@type": "Question", "name": "Wann erreiche ich Sie?",
           "acceptedAnswer": { "@type": "Answer", "text": "Telefonisch täglich von 8 bis 20 Uhr. Wenn ich gerade bei einem Kunden bin, sprechen Sie auf die Mailbox oder schreiben per WhatsApp. Ich melde mich in der Regel innerhalb einer Stunde zurück. Einen Termin machen wir dann aus, gern auch kurzfristig." } },
         { "@type": "Question", "name": "Können Sie außerhalb der Öffnungszeiten kommen?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Ja, gern. Früh morgens, abends oder am Wochenende, zum gleichen Satz." } },
+          "acceptedAnswer": { "@type": "Answer", "text": "Ja, gern. Früh morgens, abends oder am Wochenende, ohne Aufschlag." } },
         { "@type": "Question", "name": "Schließen Sie einen Auftragsverarbeitungsvertrag ab?",
           "acceptedAnswer": { "@type": "Answer", "text": "Ja. Wo ich mit personenbezogenen Daten in Berührung komme, etwa in einer Praxis oder Kanzlei, schließen wir auf Wunsch einen Auftragsverarbeitungsvertrag nach Art. 28 DSGVO. Bringen Sie gern Ihr eigenes Muster mit." } },
         { "@type": "Question", "name": "Können Sie uns bei der E-Rechnung helfen?",
           "acceptedAnswer": { "@type": "Answer", "text": "Ja. Eine E-Rechnung ist ein strukturierter Datensatz, den Ihre Software lesen und schreiben können muss. Verbreitet sind XRechnung und ZUGFeRD. Ich sehe mir an, was Ihr Rechnungsprogramm heute kann, richte das Empfangen und Erstellen ein und stimme den Ablauf mit Ihrem Steuerbüro ab. Wenn Ihr Programm es nicht kann, sage ich Ihnen, welches passt, bevor Sie etwas kaufen." } },
         { "@type": "Question", "name": "Kaufen Sie die Geräte für uns ein?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Die Beschaffung übernehme ich gern: Geräte aussuchen, Angebote vergleichen, bestellen, Lieferung prüfen und anschließend alles einrichten. Bestellt wird dabei auf Ihren Namen. So laufen Rechnung, Garantie und Gewährleistung direkt zwischen Ihnen und dem Händler, ohne Umweg über mich. Dafür gilt mein normaler Stundensatz, bei größeren Bestellungen auf Wunsch eine feste Pauschale. Ich verkaufe keine Hardware und verdiene an keiner Empfehlung mit. Ich schlage vor, was zu Ihrer Arbeit passt." } },
+          "acceptedAnswer": { "@type": "Answer", "text": "Die Beschaffung übernehme ich gern: Geräte aussuchen, Angebote vergleichen, bestellen, Lieferung prüfen und anschließend alles einrichten. Bestellt wird dabei auf Ihren Namen. So laufen Rechnung, Garantie und Gewährleistung direkt zwischen Ihnen und dem Händler, ohne Umweg über mich. Die Zeit dafür läuft über die Stunden im Wartungsvertrag, bei größeren Bestellungen auf Wunsch zu einer festen Pauschale. Ich verkaufe keine Hardware und verdiene an keiner Empfehlung mit. Ich schlage vor, was zu Ihrer Arbeit passt." } },
         { "@type": "Question", "name": "Übernehmen Sie auch Technik, die jemand anders eingerichtet hat?",
           "acceptedAnswer": { "@type": "Answer", "text": "Ja. Der erste Schritt ist dann eine kostenlose Bestandsaufnahme: Was steht wo, welche Zugänge gibt es, wohin wird gesichert. Danach wissen Sie selbst, woran Sie sind, auch unabhängig von mir." } }
       ]
@@ -232,7 +232,7 @@
     <div class="wrap">
       <h1>IT-Service für Unternehmen</h1>
       <p class="lede">
-        Für Praxis, Kanzlei, Handwerk, Laden und Büro: Ich übernehme Ihre IT-Betreuung, wenn Sie keinen eigenen IT-Mitarbeiter haben. Gern auch außerhalb Ihrer Öffnungszeiten.
+        Für Praxis, Kanzlei, Handwerk, Laden und Büro: Ich übernehme Ihre IT-Betreuung im Wartungsvertrag, wenn Sie keinen eigenen IT-Mitarbeiter haben. Gern auch außerhalb Ihrer Öffnungszeiten.
       </p>
       <div class="btn-row" style="margin-top: var(--sp-3)">
         <a class="btn btn--primary" href="tel:+491626327036">0162 63270 36</a>
@@ -275,7 +275,7 @@
     <div class="wrap">
       <div class="section-head reveal">
         <h2>Was ich für Unternehmen übernehme</h2>
-        <p>Für einen einzelnen Auftrag oder als laufende Betreuung.</p>
+        <p>Alles im Rahmen Ihres Wartungsvertrags.</p>
       </div>
 
       <ul class="leistungsliste leistungsliste--statisch reveal">
@@ -321,11 +321,11 @@
         </li>
         <li>
           <h3>Laufende Betreuung</h3>
-          <p>Ein fester Ansprechpartner, schnelle Hilfe per Fernwartung und Termine vor Ort. Ohne Vertrag gibt es keine feste Laufzeit, auf Wunsch mit Wartungsvertrag.</p>
+          <p>Ein fester Ansprechpartner, schnelle Hilfe per Fernwartung und Termine vor Ort, im Rahmen Ihres Wartungsvertrags.</p>
         </li>
         <li>
           <h3>Webseiten</h3>
-          <p>Mobil bedienbar, schnell, mit Impressum und Datenschutz nach deutschem Recht. Auf Wunsch mit Domain und Hosting, zum Festpreis.</p>
+          <p>Mobil bedienbar, schnell, mit Impressum und Datenschutz nach deutschem Recht. Auf Wunsch mit Domain und Hosting, für Vertragskunden zum Festpreis.</p>
         </li>
       </ul>
 
@@ -348,11 +348,11 @@
         </div>
         <div class="step">
           <h3>Vorschlag mit Preisrahmen</h3>
-          <p>Sie bekommen schriftlich, was ich empfehle, in welchem Preisrahmen es liegt und was zurückgestellt werden kann. Auch der Vorschlag ist kostenlos und unverbindlich. Sie entscheiden.</p>
+          <p>Sie bekommen schriftlich, was ich empfehle, welcher monatliche Betrag sich für Ihren Betrieb ergibt und was zurückgestellt werden kann. Auch der Vorschlag ist kostenlos und unverbindlich. Sie entscheiden.</p>
         </div>
         <div class="step">
           <h3>Umsetzung und danach <svg class="step__haken" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M20 6 9 17l-5-5"/></svg></h3>
-          <p>Umbauten lege ich möglichst außerhalb Ihrer Öffnungszeiten. Danach bleibe ich Ihr Ansprechpartner, ohne feste Laufzeit.</p>
+          <p>Umbauten lege ich möglichst außerhalb Ihrer Öffnungszeiten. Danach betreue ich Ihren Betrieb im Wartungsvertrag.</p>
         </div>
       </div>
 
@@ -362,40 +362,22 @@
   <section class="section section--sunken">
     <div class="wrap">
       <div class="section-head reveal">
-        <h2>Ein Stundensatz für alle Termine</h2>
+        <h2>Wartungsvertrag für Ihren Betrieb</h2>
+        <p>Für Unternehmen arbeite ich ausschließlich im Wartungsvertrag. So ist Ihre IT laufend betreut und Sie wissen jeden Monat, womit Sie rechnen.</p>
       </div>
 
-      <div class="price-panel reveal">
+      <div class="price-panel reveal" id="wartungsvertrag">
         <div>
           <div class="price-figure">
-            <span class="price-figure__value">49&nbsp;€</span>
-            <span class="price-figure__unit">netto pro Stunde</span>
+            <span class="price-figure__value">ab 250&nbsp;€</span>
+            <span class="price-figure__unit">netto pro Monat</span>
           </div>
           <p>
-            Zzgl. 19 % USt. Vor Ort zählt die erste Stunde voll, danach geht es in Viertelstunden zu 12,25 € netto weiter. Per Fernwartung rechne ich ab der ersten Viertelstunde ab.
+            Je Standort, dazu ein Betrag je Gerät. Den monatlichen Betrag stellen Sie unten für Ihren Betrieb zusammen. Zzgl. 19 % USt. Drei Stunden sind inklusive. Was über die drei Stunden hinausgeht, berechne ich mit 49 € netto pro Stunde. Der Vertrag läuft mindestens drei Monate, danach ist er monatlich kündbar.
           </p>
           <div class="btn-row" style="margin-top: var(--sp-3)">
-            <a class="btn btn--ghost" href="preise#preise-unternehmen">Anfahrt &amp; Beispiele</a>
+            <a class="btn btn--ghost" href="#rechner">Vertrag berechnen</a>
           </div>
-        </div>
-
-        <div class="price-panel__divider" aria-hidden="true"></div>
-
-        <ul class="price-list">
-          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Vorsteuerabzugsfähig</strong>, die Umsatzsteuer ist ausgewiesen.</span></li>
-          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Per Überweisung</strong> innerhalb von 14 Tagen.</span></li>
-          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Abends und am Wochenende</strong> zum gleichen Satz.</span></li>
-          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>In Mannheim ohne Anfahrtspauschale</strong>, außerhalb einmal pro Termin nach Entfernung. Fernwartung ohne Anfahrt.</span></li>
-          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Ohne Vertrag keine Laufzeit, kein Grundbetrag.</strong> Sie investieren nur in die Zeit, die ich für Sie arbeite.</span></li>
-        </ul>
-      </div>
-
-      <div class="price-panel reveal" id="wartungsvertrag" style="margin-top: var(--sp-4)">
-        <div>
-          <h3 style="margin-bottom: 0.5rem">Wartungsvertrag</h3>
-          <p>
-            Den monatlichen Betrag stellen Sie unten für Ihren Betrieb zusammen. Zzgl. 19 % USt. Drei Stunden sind inklusive. Was über die drei Stunden hinausgeht, berechne ich mit 49 € netto pro Stunde. Der Vertrag läuft mindestens drei Monate, danach ist er monatlich kündbar.
-          </p>
         </div>
 
         <div class="price-panel__divider" aria-hidden="true"></div>
@@ -409,6 +391,13 @@
           <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Vorrang bei Störungen:</strong> Vertragskunden werden bevorzugt bearbeitet.</span></li>
         </ul>
       </div>
+
+      <ul class="price-list reveal" style="margin-top: var(--sp-3); max-width: 52rem">
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Vorsteuerabzugsfähig</strong>, die Umsatzsteuer ist ausgewiesen.</span></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Per Überweisung</strong> innerhalb von 14 Tagen.</span></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Abends und am Wochenende</strong> ohne Aufschlag.</span></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>In Mannheim ohne Anfahrtspauschale</strong>, außerhalb einmal pro Termin nach Entfernung. Fernwartung ohne Anfahrt.</span></li>
+      </ul>
 
       <div class="rechner-intro reveal" id="rechner" style="margin-top: var(--sp-5)">
         <h3 style="margin-bottom: 0.3rem">Vertrag für Ihren Betrieb berechnen</h3>
@@ -537,7 +526,7 @@
           <li class="rechner__zeile" data-zeile data-preis="49" data-einheit="Stunde" data-anzahl="0" data-min="0">
             <div class="rechner__info">
               <span class="rechner__label">Zusätzliche feste Stunden im Monat</span>
-              <span class="rechner__hinweis">3&nbsp;Stunden sind je Vertrag enthalten. Jede weitere fest gebuchte Stunde: 49&nbsp;€ netto, wie der normale Stundensatz.</span>
+              <span class="rechner__hinweis">3&nbsp;Stunden sind je Vertrag enthalten. Jede weitere fest gebuchte Stunde: 49&nbsp;€ netto.</span>
             </div>
             <div class="rechner__steller">
               <button type="button" class="rechner__btn" data-aktion="minus" aria-label="Zusätzliche Stunden verringern">&minus;</button>
@@ -566,9 +555,9 @@
       </p>
 
       <div class="note reveal" style="margin-top: var(--sp-4)">
-        <p><strong>Größere Vorhaben zum Festpreis</strong></p>
+        <p><strong>Größere Vorhaben für Vertragskunden</strong></p>
         <p>
-          Für ein neues Netzwerk, einen Umzug oder die Einführung von Microsoft 365 bekommen Sie auf Wunsch ein schriftliches Festpreisangebot. Webseiten gibt es immer zum Festpreis.
+          Für ein neues Netzwerk, einen Umzug oder die Einführung von Microsoft 365 bekommen Vertragskunden auf Wunsch ein schriftliches Festpreisangebot. Webseiten gibt es für Vertragskunden immer zum Festpreis.
         </p>
       </div>
     </div>
@@ -619,11 +608,11 @@
         </details>
         <details>
           <summary>Was kostet die Bestandsaufnahme?</summary>
-          <div><p>Nichts. Die Bestandsaufnahme in Ihrem Betrieb und der schriftliche Vorschlag mit Preisrahmen sind für Unternehmen kostenlos und unverbindlich. Erst wenn Sie mich beauftragen, rechne ich nach Stundensatz oder zum vereinbarten Festpreis ab.</p></div>
+          <div><p>Nichts. Die Bestandsaufnahme in Ihrem Betrieb und der schriftliche Vorschlag mit Preisrahmen sind für Unternehmen kostenlos und unverbindlich. Kosten entstehen erst mit dem Wartungsvertrag.</p></div>
         </details>
         <details>
           <summary>Rechnen Sie netto oder brutto ab?</summary>
-          <div><p>Für Unternehmen gelten Nettopreise: 49&nbsp;€ pro Stunde zzgl. 19&nbsp;% USt. Auf der Rechnung ist die Umsatzsteuer gesondert ausgewiesen und damit für Sie vorsteuerabzugsfähig.</p></div>
+          <div><p>Für Unternehmen gelten Nettopreise zzgl. 19&nbsp;% USt.: der monatliche Betrag des Wartungsvertrags und Stunden über die drei inklusiven hinaus mit 49&nbsp;€ netto. Auf der Rechnung ist die Umsatzsteuer gesondert ausgewiesen und damit für Sie vorsteuerabzugsfähig.</p></div>
         </details>
         <details>
           <summary>Was gehört zur regelmäßigen Wartung?</summary>
@@ -634,7 +623,7 @@
         </details>
         <details>
           <summary>Brauche ich dafür einen Wartungsvertrag?</summary>
-          <div><p>Nein. Die Wartungstermine können wir auch formlos nach Aufwand vereinbaren. Wenn Sie lieber fest planen, gibt es den Wartungsvertrag: Sie stellen <a href="#rechner">online zusammen</a>, was zu Ihrem Betrieb gehört, drei Stunden sind inklusive, weitere Stunden kosten 49&nbsp;€ netto, Mindestlaufzeit drei Monate, danach monatlich kündbar.</p></div>
+          <div><p>Ja. Für Unternehmen arbeite ich ausschließlich im Wartungsvertrag. Sie stellen <a href="#rechner">online zusammen</a>, was zu Ihrem Betrieb gehört, drei Stunden sind inklusive, weitere Stunden kosten 49&nbsp;€ netto, Mindestlaufzeit drei Monate, danach monatlich kündbar.</p></div>
         </details>
         <details>
           <summary>Wie schnell sind Sie da?</summary>
@@ -649,7 +638,7 @@
         </details>
         <details>
           <summary>Können Sie außerhalb der Öffnungszeiten kommen?</summary>
-          <div><p>Ja, gern. Früh morgens, abends oder am Wochenende, zum gleichen Satz.</p></div>
+          <div><p>Ja, gern. Früh morgens, abends oder am Wochenende, ohne Aufschlag.</p></div>
         </details>
         <details>
           <summary>Schließen Sie einen Auftragsverarbeitungsvertrag ab?</summary>
@@ -670,7 +659,7 @@
           <summary>Kaufen Sie die Geräte für uns ein?</summary>
           <div>
             <p>Die Beschaffung übernehme ich gern: Geräte aussuchen, Angebote vergleichen, bestellen, Lieferung prüfen und anschließend alles einrichten. Bestellt wird dabei auf Ihren Namen. So laufen Rechnung, Garantie und Gewährleistung direkt zwischen Ihnen und dem Händler, ohne Umweg über mich.</p>
-            <p>Dafür gilt mein normaler Stundensatz, bei größeren Bestellungen auf Wunsch eine feste Pauschale. Ich verkaufe keine Hardware und verdiene an keiner Empfehlung mit. Ich schlage vor, was zu Ihrer Arbeit passt.</p>
+            <p>Die Zeit dafür läuft über die Stunden im Wartungsvertrag, bei größeren Bestellungen auf Wunsch zu einer festen Pauschale. Ich verkaufe keine Hardware und verdiene an keiner Empfehlung mit. Ich schlage vor, was zu Ihrer Arbeit passt.</p>
           </div>
         </details>
       </div>

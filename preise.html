@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Preise für Privat & Unternehmen | Clavis IT Service</title>
-<meta name="description" content="Faire, transparente Preise: 49 € pro Stunde, für Privathaushalte inklusive 19 % MwSt., für Unternehmen netto zzgl. USt. In Mannheim ohne Anfahrtspauschale, außerhalb ab 10 €.">
+<meta name="description" content="Faire, transparente Preise: 49 € pro Stunde inklusive 19 % MwSt. für Privathaushalte, für Unternehmen ein Wartungsvertrag ab 250 € netto im Monat. In Mannheim ohne Anfahrtspauschale, außerhalb ab 10 €.">
 <link rel="canonical" href="https://clavis-itservice.de/preise">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#fbfaf7">
@@ -13,7 +13,7 @@
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="Clavis IT Service">
 <meta property="og:title" content="Preise für Privat & Unternehmen | Clavis IT Service">
-<meta property="og:description" content="Faire, transparente Preise: 49 € pro Stunde, für Privathaushalte inklusive 19 % MwSt., für Unternehmen netto zzgl. USt. In Mannheim ohne Anfahrtspauschale.">
+<meta property="og:description" content="Faire, transparente Preise: 49 € pro Stunde inklusive 19 % MwSt. für Privathaushalte, für Unternehmen ein Wartungsvertrag ab 250 € netto im Monat. In Mannheim ohne Anfahrtspauschale.">
 <meta property="og:url" content="https://clavis-itservice.de/preise">
 <meta property="og:image" content="https://clavis-itservice.de/assets/img/og-image-2026-08.jpg">
 <meta property="og:image:width" content="1200">
@@ -53,7 +53,7 @@
     { "@type": "Question", "name": "Muss ich mich mit Technik auskennen?",
       "acceptedAnswer": { "@type": "Answer", "text": "Nein. Fachkenntnisse sind nicht erforderlich. Beschreiben Sie mir, was nicht funktioniert. Ich kümmere mich um die Lösung und erkläre Ihnen alles klar und verständlich." } },
     { "@type": "Question", "name": "Rechnen Sie für Unternehmen netto ab?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ja. Für Unternehmen gilt der Satz von 49 € netto pro Stunde zzgl. 19 % USt. (12,25 € netto je angefangene Viertelstunde). Auf der Rechnung ist die Umsatzsteuer gesondert ausgewiesen und damit für Sie vorsteuerabzugsfähig. Für Privathaushalte sind die 49 € der Endpreis inklusive 19 % MwSt. Alles Weitere finden Sie auf der Seite für Unternehmen." } },
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja. Für Unternehmen gibt es ausschließlich den Wartungsvertrag, netto zzgl. 19 % USt.: ab 250 € im Monat, drei Stunden inklusive, weitere Stunden 49 € netto. Auf der Rechnung ist die Umsatzsteuer gesondert ausgewiesen und damit für Sie vorsteuerabzugsfähig. Für Privathaushalte sind die 49 € der Endpreis inklusive 19 % MwSt. Alles Weitere finden Sie auf der Seite für Unternehmen." } },
     { "@type": "Question", "name": "Bar oder per Überweisung?",
       "acceptedAnswer": { "@type": "Answer", "text": "Bar vor Ort oder per Überweisung, wie es Ihnen lieber ist." } },
     { "@type": "Question", "name": "Kommen Sie auch abends oder am Wochenende?",
@@ -115,14 +115,14 @@
         },
         {
           "@type": "Offer",
-          "name": "Arbeitszeit, Unternehmen",
+          "name": "Wartungsvertrag, Unternehmen",
           "priceSpecification": {
             "@type": "UnitPriceSpecification",
-            "price": "49",
+            "minPrice": "250",
             "priceCurrency": "EUR",
-            "unitCode": "HUR",
+            "unitCode": "MON",
             "valueAddedTaxIncluded": false,
-            "description": "Für Unternehmen. Nettopreis zzgl. 19 % USt. Vor Ort erste angefangene Stunde, danach im 15-Minuten-Takt (12,25 € netto je angefangene Viertelstunde). Fernwartung ab der ersten Viertelstunde. Auf Wunsch Wartungsvertrag: drei Stunden inklusive, weitere Stunden 49 € netto, Mindestlaufzeit drei Monate, danach monatlich kündbar."
+            "description": "Für Unternehmen ausschließlich im Wartungsvertrag. Monatlicher Betrag nach Standorten und Geräten, ab 250 € netto je Standort, zzgl. 19 % USt. Drei Stunden inklusive, weitere Stunden 49 € netto, Mindestlaufzeit drei Monate, danach monatlich kündbar."
           }
         },
         {
@@ -219,7 +219,7 @@
   <section class="page-head">
     <div class="wrap">
       <h1>Preise, die Sie vorher kennen.</h1>
-      <p class="lede">Ein fairer, transparenter Stundensatz für Privathaushalte und für Unternehmen bis 10&nbsp;Mitarbeiter. Keine versteckten Kosten.</p>
+      <p class="lede">Ein fairer Stundensatz für Privathaushalte und ein planbarer Wartungsvertrag für Unternehmen bis 10&nbsp;Mitarbeiter. Keine versteckten Kosten.</p>
       <div class="preis-umschalter reveal" role="tablist" aria-label="Preise anzeigen für" style="margin-top: var(--sp-3)">
         <button type="button" class="preis-tab is-aktiv" role="tab" id="preis-tab-privat" aria-selected="true" aria-controls="preise-privat" data-preistab="privat">Für Privathaushalte</button>
         <button type="button" class="preis-tab" role="tab" id="preis-tab-unternehmen" aria-selected="false" aria-controls="preise-unternehmen" data-preistab="unternehmen" tabindex="-1">Für Unternehmen</button>
@@ -240,7 +240,7 @@
               Klarer Endpreis inklusive 19 % MwSt. Vor Ort zählt die erste Stunde voll, danach geht es im fairen Viertelstundentakt zu 12,25&nbsp;€ weiter. Sind wir nach 70 Minuten fertig, rechne ich 75 Minuten ab – nicht zwei volle Stunden. Per Fernwartung rechne ich ab der ersten Viertelstunde ab.
             </p>
             <p class="price-figure__note">
-              Für Privathaushalte inklusive 19 % MwSt. · Für Unternehmen gelten Nettopreise zzgl. 19&nbsp;% USt., siehe Tab „Für Unternehmen“.
+              Endpreis inklusive 19 % MwSt. · Für Unternehmen gibt es den Wartungsvertrag, siehe Tab „Für Unternehmen“.
             </p>
             <div class="btn-row" style="margin-top: var(--sp-3)">
               <a class="btn btn--primary" href="tel:+491626327036">0162 63270 36</a>
@@ -261,51 +261,25 @@
 
       <div id="preise-unternehmen" role="tabpanel" aria-labelledby="preis-tab-unternehmen" data-preispanel="unternehmen">
         <div class="section-head reveal" style="margin-bottom: var(--sp-3)">
-          <h2>Ein Stundensatz für alle Termine</h2>
+          <h2>Wartungsvertrag für Ihren Betrieb</h2>
+          <p>Für Unternehmen arbeite ich ausschließlich im Wartungsvertrag. Drei Stunden sind inklusive, was darüber hinausgeht, kostet 49&nbsp;€ netto pro Stunde. Mindestlaufzeit drei Monate, danach monatlich kündbar.</p>
         </div>
 
         <div class="price-panel reveal">
           <div>
             <div class="price-figure">
-              <span class="price-figure__value">49 €</span>
-              <span class="price-figure__unit">netto pro Stunde</span>
+              <span class="price-figure__value">ab 250 €</span>
+              <span class="price-figure__unit">netto pro Monat</span>
             </div>
             <p>
-              Zzgl. 19 % USt., auf der Rechnung gesondert ausgewiesen und vorsteuerabzugsfähig. Vor Ort zählt die erste Stunde voll, danach geht es im Viertelstundentakt zu 12,25&nbsp;€ netto weiter. Per Fernwartung rechne ich ab der ersten Viertelstunde ab.
+              Je Standort, dazu ein Betrag je Gerät. Den genauen Monatsbetrag für Ihren Betrieb stellen Sie online zusammen.
             </p>
             <p class="price-figure__note">
-              Für Unternehmen netto zzgl. 19 % USt. · Für Privathaushalte 49&nbsp;€ inklusive MwSt., siehe Tab „Für Privathaushalte“.
-            </p>
-            <div class="btn-row" style="margin-top: var(--sp-3)">
-              <a class="btn btn--primary" href="tel:+491626327036">0162 63270 36</a>
-              <a class="btn btn--ghost" href="geschaeftskunden">Leistungen für Unternehmen</a>
-            </div>
-          </div>
-
-          <div class="price-panel__divider" aria-hidden="true"></div>
-
-          <ul class="price-list">
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Vorsteuerabzugsfähig:</strong> Die Umsatzsteuer ist auf der Rechnung gesondert ausgewiesen.</span></li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Per Überweisung</strong> innerhalb von 14 Tagen.</span></li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Abends und am Wochenende</strong> zum gleichen Satz.</span></li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>In Mannheim 0 € Anfahrt</strong>, außerhalb die gleiche Staffel wie für Privathaushalte, siehe unten. Fernwartung ohne Anfahrt.</span></li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Ohne Vertrag keine Laufzeit, kein Grundbetrag.</strong> Sie investieren nur in die Zeit, die ich für Sie arbeite.</span></li>
-          </ul>
-        </div>
-
-        <div class="section-head reveal" style="margin-top: var(--sp-5); margin-bottom: var(--sp-3)">
-          <h2>Wartungsvertrag für feste Planung</h2>
-          <p>Drei Stunden sind je Vertrag inklusive, was darüber hinausgeht, kostet 49&nbsp;€ netto pro Stunde, wie der normale Stundensatz. Mindestlaufzeit drei Monate, danach monatlich kündbar.</p>
-        </div>
-
-        <div class="price-panel reveal">
-          <div>
-            <h3 style="margin-bottom: 0.5rem">Was im Vertrag enthalten ist</h3>
-            <p>
-              Ein fester Wartungstermin im Quartal, laufende Überwachung von Datensicherung, Festplatten und Virenschutz, sowie Vorrang bei Störungen. Den genauen Monatsbetrag für Ihren Betrieb stellen Sie online zusammen.
+              Zzgl. 19 % USt., auf der Rechnung gesondert ausgewiesen und vorsteuerabzugsfähig. · Für Privathaushalte 49&nbsp;€ pro Stunde inklusive MwSt., siehe Tab „Für Privathaushalte“.
             </p>
             <div class="btn-row" style="margin-top: var(--sp-3)">
               <a class="btn btn--primary" href="geschaeftskunden#rechner">Wartungsvertrag online berechnen</a>
+              <a class="btn btn--ghost" href="geschaeftskunden">Leistungen für Unternehmen</a>
             </div>
           </div>
 
@@ -315,6 +289,9 @@
             <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Wartungstermin einmal im Quartal:</strong> Updates, Virenschutz, Datensicherung, Festplatten und Reinigung, danach ein kurzer Bericht.</span></li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Drei Stunden inklusive</strong>, zum Beispiel für ein neues Postfach oder einen neuen Mitarbeiter.</span></li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Vorrang bei Störungen:</strong> Vertragskunden werden bevorzugt bearbeitet.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Abends und am Wochenende</strong> ohne Aufschlag.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>In Mannheim 0 € Anfahrt</strong>, außerhalb die gleiche Staffel wie für Privathaushalte, siehe unten. Fernwartung ohne Anfahrt.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Per Überweisung</strong> innerhalb von 14 Tagen.</span></li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Nach Standorten, Geräten und Stunden berechnet,</strong> keine Staffelpreise. Alle Positionen im Rechner auf der Unternehmensseite.</span></li>
           </ul>
         </div>
@@ -410,29 +387,29 @@
     <div class="wrap">
       <div class="section-head reveal">
         <h2>Beispiele für Unternehmen</h2>
-        <p>Nettopreise zzgl. 19 % USt. Für laufende Betreuung lohnt sich oft der Wartungsvertrag.</p>
+        <p>Typischer Zeitaufwand. Im Wartungsvertrag sind drei Stunden inklusive.</p>
       </div>
 
       <ul class="example-list reveal">
         <li>
           <div class="example-list__label">Neuen Arbeitsplatz einrichten<span>Rechner einrichten, Zugänge anlegen, Programme installieren</span></div>
-          <div class="example-list__value">ca. 1–2 Std. · 49–98 €</div>
+          <div class="example-list__value">ca. 1–2 Std.</div>
         </li>
         <li>
           <div class="example-list__label">Drucker ins Firmennetzwerk einbinden<span>Einrichtung für alle Arbeitsplätze im Büro</span></div>
-          <div class="example-list__value">ca. 1 Std. · ab 49 €</div>
+          <div class="example-list__value">ca. 1 Std.</div>
         </li>
         <li>
           <div class="example-list__label">Microsoft 365 oder E-Mail einrichten<span>Neues Postfach oder neuer Mitarbeiter</span></div>
-          <div class="example-list__value">ca. 1 Std. · ab 49 €</div>
+          <div class="example-list__value">ca. 1 Std.</div>
         </li>
         <li>
           <div class="example-list__label">WLAN mit Gästenetz einrichten<span>Eigenes Netz für Kunden, getrennt vom Firmennetz</span></div>
-          <div class="example-list__value">ca. 1–2 Std. · 49–98 €</div>
+          <div class="example-list__value">ca. 1–2 Std.</div>
         </li>
         <li>
           <div class="example-list__label">Kurze Hilfe per Fernwartung<span>Eine Einstellung, ein Update, eine Frage</span></div>
-          <div class="example-list__value">ab 12,25 €</div>
+          <div class="example-list__value">oft wenige Minuten</div>
         </li>
       </ul>
 
@@ -500,7 +477,7 @@
 
         <details>
           <summary>Rechnen Sie für Unternehmen netto ab?</summary>
-          <div><p>Ja. Für Unternehmen gilt der Satz von 49&nbsp;€ netto pro Stunde zzgl. 19&nbsp;% USt. (12,25&nbsp;€ netto je angefangene Viertelstunde). Auf der Rechnung ist die Umsatzsteuer gesondert ausgewiesen und damit für Sie vorsteuerabzugsfähig. Für Privathaushalte sind die 49&nbsp;€ der Endpreis inklusive 19&nbsp;% MwSt. Alles Weitere finden Sie auf der Seite <a href="geschaeftskunden">für Unternehmen</a>.</p></div>
+          <div><p>Ja. Für Unternehmen gibt es ausschließlich den Wartungsvertrag, netto zzgl. 19&nbsp;% USt.: ab 250&nbsp;€ im Monat, drei Stunden inklusive, weitere Stunden 49&nbsp;€ netto. Auf der Rechnung ist die Umsatzsteuer gesondert ausgewiesen und damit für Sie vorsteuerabzugsfähig. Für Privathaushalte sind die 49&nbsp;€ der Endpreis inklusive 19&nbsp;% MwSt. Alles Weitere finden Sie auf der Seite <a href="geschaeftskunden">für Unternehmen</a>.</p></div>
         </details>
 
         <details>
