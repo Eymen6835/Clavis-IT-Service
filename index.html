@@ -29,7 +29,7 @@
 <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/style.css?v=2026-11-01-umkreis">
+<link rel="stylesheet" href="assets/css/style.css?v=2026-11-01-weiche">
 
 <script src="assets/js/darstellung.js?v=2026-10-18-hell"></script>
 
@@ -230,23 +230,33 @@
 
 <main id="main">
 
-  <section class="hero">
+  <section class="hero hero--weiche">
     <div class="wrap">
       <div class="hero__inner">
         <h1>
           <span class="hero__claim">Clavis IT Service. <span class="hero__zusatz">Zuverlässig vor Ort &amp; per Fernwartung.</span></span>
-          <span class="hero__kicker">Persönliche IT-Hilfe für Privathaushalte, Senioren und Unternehmen in Mannheim und Umgebung</span>
+          <span class="hero__kicker">Persönliche IT-Betreuung in Mannheim und Umgebung</span>
         </h1>
 
-        <p class="hero__einladung">Rufen Sie an – ich berate Sie persönlich und erkläre alles verständlich.</p>
-        <div class="hero__kontakt">
-          <img class="hero__qr" src="assets/img/qr-anrufen.svg" width="25" height="25" alt="QR-Code: Mit dem Handy scannen, um 0162 63270 36 anzurufen">
-          <div class="hero__kontakt-text">
-            <span class="hero__kontakt-label">Mit dem Handy scannen und anrufen</span>
-            <a class="hero__nummer" href="tel:+491626327036">0162 63270 36</a>
-            <a class="hero__wa" href="https://wa.me/491626327036?text=Guten%20Tag%2C%20ich%20br%C3%A4uchte%20Hilfe%20bei%20folgendem%20Problem%3A%20" rel="noopener">Lieber schreiben? Per WhatsApp</a>
-          </div>
-        </div>
+        <h2 class="weiche__frage" id="weiche-frage">Für wen suchen Sie Unterstützung?</h2>
+        <nav class="weiche" aria-labelledby="weiche-frage">
+          <a class="weiche__karte" href="leistungen">
+            <span class="weiche__icon" aria-hidden="true"><svg><use href="#i-home"/></svg></span>
+            <span class="weiche__titel">Privatkunden</span>
+            <span class="weiche__text">Für Privathaushalte und Senioren: Computer, Smartphone, WLAN, Drucker und Smart-TV, direkt bei Ihnen zu Hause.</span>
+            <span class="weiche__preis">49&nbsp;€ pro Stunde inkl. MwSt.</span>
+            <span class="weiche__los">Weiter als Privatkunde</span>
+          </a>
+          <a class="weiche__karte" href="geschaeftskunden">
+            <span class="weiche__icon" aria-hidden="true"><svg><use href="#i-office"/></svg></span>
+            <span class="weiche__titel">Unternehmen</span>
+            <span class="weiche__text">Für Praxen, Büros, Handwerk und Betriebe bis 10&nbsp;Mitarbeiter: Arbeitsplätze, Netzwerk, Microsoft&nbsp;365 und Datensicherung.</span>
+            <span class="weiche__preis">49&nbsp;€ netto pro Stunde · Wartungsvertrag ab 250&nbsp;€/Monat</span>
+            <span class="weiche__los">Weiter als Unternehmen</span>
+          </a>
+        </nav>
+
+        <p class="weiche__hinweis">Nicht sicher, was passt? Rufen Sie an: <a href="tel:+491626327036">0162&nbsp;63270&nbsp;36</a> oder schreiben Sie per <a href="https://wa.me/491626327036?text=Guten%20Tag%2C%20ich%20br%C3%A4uchte%20Hilfe%20bei%20folgendem%20Problem%3A%20" rel="noopener">WhatsApp</a>.</p>
       </div>
 
       <figure class="hero__bild" aria-hidden="true">
@@ -256,25 +266,6 @@
                width="1800" height="1201" alt="" fetchpriority="high" decoding="async">
         </picture>
       </figure>
-    </div>
-  </section>
-
-  <section class="section section--tight">
-    <div class="wrap">
-      <div class="weg-wahl reveal">
-        <a class="card weg-karte" href="geschaeftskunden">
-          <div class="card__icon"><svg aria-hidden="true"><use href="#i-office"/></svg></div>
-          <h3>Für Unternehmen</h3>
-          <p>IT-Betreuung für Praxen, Büros, Handwerk und Betriebe bis 10&nbsp;Mitarbeiter, ohne eigene IT-Abteilung.</p>
-          <span class="arrow-link">Leistungen für Unternehmen ansehen</span>
-        </a>
-        <a class="card weg-karte" href="leistungen">
-          <div class="card__icon"><svg aria-hidden="true"><use href="#i-home"/></svg></div>
-          <h3>Für Privathaushalte</h3>
-          <p>Computer, Smartphone, WLAN, Drucker &amp; Smart-TV: geduldige IT-Hilfe bei Ihnen zu Hause.</p>
-          <span class="arrow-link">Leistungen für Zuhause ansehen</span>
-        </a>
-      </div>
     </div>
   </section>
 
@@ -306,61 +297,6 @@
   <section class="section section--sunken">
     <div class="wrap">
       <div class="section-head reveal">
-        <h2>So helfe ich</h2>
-        <p style="margin-top: var(--sp-2); max-width: 46rem">
-          Meistens komme ich direkt zu Ihnen nach Hause oder ins Büro. Kleinere Dinge gehen auch per Fernwartung,
-          minutengenau abgerechnet, immer nur mit Ihrer vorherigen Zustimmung.
-        </p>
-      </div>
-
-      <ul class="leistungsliste reveal">
-        <li>
-          <a href="leistungen#einrichtung">
-            <h3>Computer, Smartphone &amp; WLAN</h3>
-            <p>Für Zuhause: Geräte einrichten, Daten übernehmen, starkes WLAN ohne Funklöcher.</p>
-          </a>
-        </li>
-        <li>
-          <a href="geschaeftskunden">
-            <h3>Arbeitsplätze &amp; Firmennetzwerk</h3>
-            <p>Für Unternehmen: neue Arbeitsplätze, Netzwerk und WLAN mit Gästezugang einrichten.</p>
-          </a>
-        </li>
-        <li>
-          <a href="leistungen#einrichtung">
-            <h3>Drucker &amp; Scanner</h3>
-            <p>Für Zuhause: kabellos anschließen, Drucken und Scannen vom PC, Handy und Tablet.</p>
-          </a>
-        </li>
-        <li>
-          <a href="geschaeftskunden">
-            <h3>Server, NAS &amp; Datensicherung</h3>
-            <p>Für Unternehmen: zuverlässige Datensicherung und laufende Betreuung Ihrer Technik.</p>
-          </a>
-        </li>
-        <li>
-          <a href="leistungen#sicherheit">
-            <h3>Sicherheit &amp; Betrugsschutz</h3>
-            <p>Für Zuhause: Viren entfernen, Schutz vor Betrugsmaschen und Phishing-E-Mails.</p>
-          </a>
-        </li>
-        <li>
-          <a href="geschaeftskunden">
-            <h3>Microsoft 365 &amp; E-Mail</h3>
-            <p>Für Unternehmen: E-Mail, Cloud-Ablage und Zusammenarbeit professionell einrichten.</p>
-          </a>
-        </li>
-      </ul>
-
-      <div class="note reveal" style="margin-top: var(--sp-4)">
-        <p><strong>Wichtig:</strong> Ich rufe nie unaufgefordert an. Meldet sich jemand so bei Ihnen, beenden Sie das Gespräch bitte sofort.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--sunken">
-    <div class="wrap">
-      <div class="section-head reveal">
         <h2>So läuft es ab</h2>
       </div>
 
@@ -378,84 +314,6 @@
           <p>Ich setze um, was Sie freigegeben haben. Danach bleibe ich Ihr Ansprechpartner, ohne feste Laufzeit.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <h2>Was es kostet</h2>
-      </div>
-
-      <div class="weg-wahl reveal">
-        <a class="card weg-karte" href="preise">
-          <h3>Für Privathaushalte</h3>
-          <div class="price-figure">
-            <span class="price-figure__value">49 €</span>
-            <span class="price-figure__unit">pro Termin/Std.</span>
-          </div>
-          <p>Klarer Endpreis inkl. 19&nbsp;% MwSt. Erste Stunde voll, danach im 15-Minuten-Takt zu 12,25&nbsp;€.</p>
-          <span class="arrow-link">Preise für Zuhause ansehen</span>
-        </a>
-        <a class="card weg-karte" href="preise#preise-unternehmen">
-          <h3>Für Unternehmen</h3>
-          <div class="price-figure">
-            <span class="price-figure__value">ab 250 €</span>
-            <span class="price-figure__unit">pro Monat</span>
-          </div>
-          <p>Wartungsvertrag netto zzgl. 19&nbsp;% USt., drei Stunden inklusive. Online für Ihren Betrieb berechnen.</p>
-          <span class="arrow-link">Wartungsvertrag berechnen</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--foto section--sunken">
-    <div class="wrap">
-      <div class="split split--wide-left split--foto reveal">
-        <div>
-          <h2>Für Privathaushalte: IT-Hilfe direkt bei Ihnen zu Hause</h2>
-          <div class="prose" style="margin-top: var(--sp-3)">
-            <p>
-              Sie müssen Ihre Geräte weder abbauen noch in eine Werkstatt bringen: Ich komme direkt zu Ihnen nach Hause und kümmere mich vor Ort darum.
-            </p>
-            <p>
-              Ob Windows-Computer, Mac, Laptop, Smartphone, Tablet, Drucker oder Fernseher: Ich nehme mir die Zeit, die Ihr Anliegen erfordert, löse das Problem gründlich und erkläre Ihnen die Bedienung so, dass Sie sie künftig sicher selbst beherrschen.
-            </p>
-          </div>
-          <div class="btn-row" style="margin-top: var(--sp-3)">
-            <a class="btn btn--ghost" href="leistungen">Alle Leistungen für Zuhause</a>
-          </div>
-        </div>
-
-        <figure class="media media--wide media--hell">
-          <picture>
-            <source type="image/avif"
-                    srcset="assets/img/buero-800.avif 800w, assets/img/buero-1600.avif 1600w"
-                    sizes="(min-width: 64em) 56vw, 92vw">
-            <source type="image/webp"
-                    srcset="assets/img/buero-800.webp 800w, assets/img/buero-1600.webp 1600w"
-                    sizes="(min-width: 64em) 56vw, 92vw">
-            <img src="assets/img/buero-800.jpg"
-                 srcset="assets/img/buero-800.jpg 800w, assets/img/buero-1600.jpg 1600w"
-                 sizes="(min-width: 64em) 56vw, 92vw"
-                 width="1600" height="1067" loading="lazy" decoding="async"
-                 alt="Freundlicher IT-Helfer erklärt einer Kundin am Tisch geduldig den Laptop">
-          </picture>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--tight">
-    <div class="wrap">
-      <a class="card privat-hinweis reveal" href="leistungen#beratung">
-        <div>
-          <h3>Geduldige Unterstützung für Senioren &amp; Angehörige</h3>
-          <p>Sie möchten, dass Ihre Eltern oder Großeltern sicher und selbstständig mit Computer, Tablet oder Smartphone umgehen? Ich unterstütze mit ausreichend Zeit und verständlichen Schritt-für-Schritt-Anleitungen.</p>
-          <span class="arrow-link">Mehr zur Unterstützung für Senioren</span>
-        </div>
-      </a>
     </div>
   </section>
 

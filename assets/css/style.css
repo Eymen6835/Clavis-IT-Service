@@ -2995,3 +2995,108 @@ body { padding-bottom: 0; }
   .header .theme-toggle,
   .header .burger { background: var(--bg-raised); }
 }
+
+/* ---------- Startseite: Weiche Privatkunden / Unternehmen ---------- */
+.weiche__frage {
+  margin-top: var(--sp-5);
+  font-family: var(--font-sans);
+  font-size: var(--step-1);
+  font-weight: 600;
+  letter-spacing: -0.018em;
+  color: var(--ink);
+}
+.weiche {
+  display: grid;
+  gap: var(--sp-2);
+  margin-top: var(--sp-3);
+  max-width: 52rem;
+}
+@media (min-width: 40em) {
+  .weiche { grid-template-columns: 1fr 1fr; gap: var(--sp-3); }
+}
+.weiche__karte {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: var(--sp-3);
+  background: var(--bg-raised);
+  border: 1.5px solid var(--line-strong);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color var(--dur-hover) var(--ease-out),
+              box-shadow var(--dur-hover) var(--ease-out),
+              transform var(--dur-hover) var(--ease-out);
+}
+.weiche__karte:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  color: var(--ink);
+}
+.weiche__karte:active { transform: translateY(0); }
+.weiche__karte:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.weiche__icon {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.8rem;
+  background: var(--accent-wash);
+  color: var(--accent-icon);
+}
+.weiche__icon svg { width: 26px; height: 26px; }
+.weiche__titel {
+  margin-top: 0.25rem;
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+.weiche__text { font-size: 1.0625rem; line-height: 1.55; color: var(--ink-muted); }
+.weiche__preis { font-size: 0.9375rem; font-weight: 600; color: var(--ink-subtle); }
+.weiche__los {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding: 0.8rem 1.1rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 600;
+  font-size: 1.0625rem;
+  transition: background-color var(--dur-hover) var(--ease-out);
+}
+.weiche__preis { margin-bottom: var(--sp-1); }
+.weiche__los::after { content: '→'; transition: transform var(--dur-hover) var(--ease-out); }
+.weiche__karte:hover .weiche__los { background: var(--accent-hover); }
+.weiche__karte:hover .weiche__los::after { transform: translateX(4px); }
+.weiche__hinweis {
+  margin-top: var(--sp-3);
+  font-size: 1.0625rem;
+  color: var(--ink-muted);
+}
+.weiche__hinweis a { color: var(--ink); font-weight: 600; text-underline-offset: 0.2em; }
+.weiche__hinweis a:hover { color: var(--accent-text); }
+@media (max-width: 40em) {
+  .weiche__frage { margin-top: var(--sp-4); }
+  .weiche__karte { padding: var(--sp-2) var(--sp-3) var(--sp-3); }
+}
+@media (min-width: 64em) {
+  .hero--weiche { padding-block: var(--sp-6) var(--sp-6); }
+  .hero--weiche h1 { font-size: clamp(3rem, 1rem + 3.2vw, 4.6rem); }
+  .weiche__frage { margin-top: var(--sp-4); }
+}
+@media (max-width: 40em) {
+  .hero--weiche { padding-top: var(--sp-5); }
+  .weiche__karte { gap: 0.35rem; padding: var(--sp-2) var(--sp-2) var(--sp-2) var(--sp-3); }
+  .weiche__icon { display: none; }
+  .weiche__titel { margin-top: 0; font-size: var(--step-1); }
+  .weiche__text { font-size: 1rem; line-height: 1.5; }
+  .weiche__preis { font-size: 0.875rem; margin-bottom: 0.35rem; }
+  .weiche__los { padding: 0.65rem 1rem; font-size: 1rem; }
+}
