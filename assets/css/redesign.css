@@ -1,0 +1,615 @@
+/* =====================================================================
+   Clavis IT Service – Redesign „Wegweiser“
+   Leitidee: deutsche Beschilderung. Verkehrsblau als Fläche, weiße
+   Schilder, Barlow Condensed für Überschriften wie auf Wegweisern,
+   Barlow in normaler Breite für Fließtext. Wird nach style.css
+   geladen und überschreibt Tokens und Komponenten.
+   ===================================================================== */
+
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/barlow-latin-400.woff') format('woff');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/barlow-latin-400i.woff') format('woff');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600 800;
+  font-display: swap;
+  src: url('../fonts/barlow-latin-600.woff') format('woff');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/barlow-condensed-latin-600.woff') format('woff');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/barlow-condensed-latin-700.woff') format('woff');
+}
+
+/* ---------- Tokens ---------- */
+:root {
+  --bg:           #ffffff;
+  --bg-sunken:    #edf1f5;
+  --bg-raised:    #ffffff;
+  --ink:          #18232d;
+  --ink-muted:    #44525f;
+  --ink-subtle:   #56636f;
+  --accent:       #0b4f8f;
+  --accent-hover: #083d70;
+  --accent-ink:   #ffffff;
+  --accent-text:  #0b4f8f;
+  --accent-wash:  rgba(11, 79, 143, 0.09);
+  --accent-icon:  #0b4f8f;
+  --line:         #d3dbe4;
+  --line-strong:  #a9b6c4;
+  --shadow-sm:    none;
+  --shadow-md:    0 2px 0 rgba(24, 35, 45, 0.08);
+  --card-shadow:  none;
+  --overlay:      rgba(255, 255, 255, 0.94);
+
+  --schild:       #0b4f8f;
+  --schild-tief:  #073564;
+  --schild-ink:   #ffffff;
+  --warn:         #b3171f;
+
+  --font-sans:    'Barlow', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Barlow Condensed', 'Arial Narrow', 'Segoe UI', sans-serif;
+  --font-brand:   var(--font-display);
+  --font-mono:    var(--font-sans);
+
+  --radius:    5px;
+  --radius-lg: 7px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg:           #0d1823;
+    --bg-sunken:    #111f2d;
+    --bg-raised:    #15283a;
+    --ink:          #eef3f8;
+    --ink-muted:    #c5d0db;
+    --ink-subtle:   #a3b0be;
+    --accent:       #7db3f0;
+    --accent-hover: #9bc5f5;
+    --accent-ink:   #0d1823;
+    --accent-text:  #8dbdf2;
+    --accent-wash:  rgba(125, 179, 240, 0.12);
+    --accent-icon:  #8dbdf2;
+    --line:         #22344a;
+    --line-strong:  #3a5068;
+    --shadow-md:    none;
+    --overlay:      rgba(13, 24, 35, 0.94);
+    --schild:       #0b3a69;
+    --schild-tief:  #082947;
+    --warn:         #ff8a8f;
+  }
+}
+:root[data-theme='dark'] {
+  --bg:           #0d1823;
+  --bg-sunken:    #111f2d;
+  --bg-raised:    #15283a;
+  --ink:          #eef3f8;
+  --ink-muted:    #c5d0db;
+  --ink-subtle:   #a3b0be;
+  --accent:       #7db3f0;
+  --accent-hover: #9bc5f5;
+  --accent-ink:   #0d1823;
+  --accent-text:  #8dbdf2;
+  --accent-wash:  rgba(125, 179, 240, 0.12);
+  --accent-icon:  #8dbdf2;
+  --line:         #22344a;
+  --line-strong:  #3a5068;
+  --shadow-md:    none;
+  --overlay:      rgba(13, 24, 35, 0.94);
+  --schild:       #0b3a69;
+  --schild-tief:  #082947;
+  --warn:         #ff8a8f;
+}
+
+/* Blaue Schildflächen: Farben innerhalb umkehren */
+.page-head,
+.hero--weiche,
+.cta-band,
+.footer {
+  --ink:          #ffffff;
+  --ink-muted:    rgba(255, 255, 255, 0.86);
+  --ink-subtle:   rgba(255, 255, 255, 0.78);
+  --accent:       #ffffff;
+  --accent-hover: #e4edf7;
+  --accent-ink:   #0b4f8f;
+  --accent-text:  #ffffff;
+  --accent-icon:  #ffffff;
+  --accent-wash:  rgba(255, 255, 255, 0.14);
+  --line:         rgba(255, 255, 255, 0.28);
+  --line-strong:  rgba(255, 255, 255, 0.55);
+  --bg-raised:    transparent;
+  --bg-sunken:    rgba(255, 255, 255, 0.1);
+  color: var(--ink);
+}
+
+/* ---------- Grundtypografie ---------- */
+body {
+  font-family: var(--font-sans);
+  font-feature-settings: normal;
+  line-height: 1.65;
+  letter-spacing: 0.005em;
+}
+
+h1, h2, h3, h4,
+.stat__value,
+.price-figure__value,
+.hero__nummer,
+.weiche__titel,
+.contact-card__value,
+.example-list__value {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+h1 { font-size: clamp(2.6rem, 1.7rem + 3.6vw, 4.6rem); line-height: 1.02; }
+h2 { font-size: clamp(2.1rem, 1.6rem + 2vw, 3.2rem); line-height: 1.05; }
+h3 { font-size: clamp(1.45rem, 1.3rem + 0.5vw, 1.75rem); line-height: 1.15; font-weight: 600; }
+h1, h2, h3, h4 { letter-spacing: 0; }
+
+a { text-decoration-thickness: 2px; text-underline-offset: 0.18em; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+/* Pfeil hinter Textlinks entfällt; Unterstreichung trägt den Link */
+.arrow-link {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--accent-text);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+.arrow-link::after { content: none; }
+.arrow-link:hover { color: var(--ink); }
+
+/* ---------- Kopfzeile ---------- */
+.header,
+.header.is-stuck {
+  background: var(--bg);
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+  border-bottom: 4px solid var(--schild);
+  box-shadow: none;
+}
+.header::before,
+.header::after { display: none; }
+
+.brand__name {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: var(--ink);
+}
+.brand__name span,
+:root[data-theme='dark'] .brand__name span { color: var(--accent-text); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .brand__name span { color: var(--accent-text); }
+}
+.brand__tag {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  color: var(--ink-subtle);
+}
+.brand__mark { border-radius: 6px; }
+
+.nav__link {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius);
+}
+.nav__link::after { display: none; }
+.nav__link:hover { background: var(--accent-wash); color: var(--ink); }
+.nav__link[aria-current='page'] {
+  background: var(--schild);
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border-radius: var(--radius);
+  border-width: 2px;
+  box-shadow: none;
+}
+.btn--primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.btn--primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: var(--accent-ink); }
+.btn--ghost { background: transparent; border-color: var(--accent); color: var(--accent-text); }
+.btn--ghost:hover { background: var(--accent-wash); border-color: var(--accent); color: var(--accent-text); }
+.btn--sm { font-size: 1.2rem; }
+
+.theme-toggle,
+.burger {
+  border-radius: var(--radius);
+  border: 2px solid var(--line);
+  background: transparent;
+  box-shadow: none;
+}
+
+.mobile-nav__list a {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.9rem;
+  letter-spacing: 0;
+}
+
+/* ---------- Startseite: Schilderbrücke ---------- */
+.hero.hero--weiche {
+  background: var(--schild);
+  padding-block: var(--sp-6) var(--sp-7);
+  border-bottom: 0;
+}
+.hero--weiche .hero__bild { display: none; }
+.hero--weiche .hero__claim { color: #fff; max-width: none; }
+.hero--weiche h1 {
+  font-size: clamp(3rem, 1.6rem + 5.2vw, 6.4rem);
+  line-height: 0.95;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.hero--weiche .hero__zusatz {
+  margin-top: 0.35em;
+  font-size: 0.42em;
+  font-weight: 600;
+  line-height: 1.15;
+  color: rgba(255, 255, 255, 0.9);
+}
+.hero--weiche .hero__kicker {
+  margin-top: var(--sp-2);
+  font-family: var(--font-sans);
+  font-size: var(--step-0);
+  color: rgba(255, 255, 255, 0.82);
+}
+.weiche__frage {
+  margin-top: var(--sp-5);
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 1.3rem + 1vw, 2.1rem);
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Die beiden Wegweiser */
+.weiche {
+  max-width: none;
+  gap: var(--sp-3);
+  margin-top: var(--sp-3);
+}
+.weiche__karte {
+  --spitze: clamp(2.2rem, 1.6rem + 2vw, 3.6rem);
+  --ink: #0b3a69;
+  --ink-muted: #2f4357;
+  background: #ffffff;
+  color: var(--ink);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: var(--sp-3) calc(var(--spitze) + var(--sp-3)) var(--sp-3) var(--sp-4);
+  clip-path: polygon(0 0, calc(100% - var(--spitze)) 0, 100% 50%, calc(100% - var(--spitze)) 100%, 0 100%);
+  transition: transform 260ms var(--ease-out), background-color 200ms var(--ease-out);
+  gap: 0.4rem;
+}
+/* erstes Schild (Unternehmen) zeigt nach links */
+.weiche__karte:first-child {
+  padding: var(--sp-3) var(--sp-4) var(--sp-3) calc(var(--spitze) + var(--sp-3));
+  clip-path: polygon(var(--spitze) 0, 100% 0, 100% 100%, var(--spitze) 100%, 0 50%);
+}
+.weiche__karte:hover { transform: translateX(6px); border-color: transparent; color: var(--ink); background: #f1f6fc; }
+.weiche__karte:first-child:hover { transform: translateX(-6px); }
+.weiche__karte:focus-visible { outline: none; background: #fff6cc; }
+.weiche__icon {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 4px;
+  background: #0b4f8f;
+  color: #fff;
+}
+.weiche__icon svg { width: 30px; height: 30px; }
+.weiche__titel {
+  margin-top: 0.5rem;
+  font-size: clamp(2.2rem, 1.7rem + 1.8vw, 3.2rem);
+  line-height: 1;
+  color: #0b3a69;
+}
+.weiche__text { color: #2f4357; font-size: 1.0625rem; max-width: 34ch; margin-bottom: var(--sp-1); }
+.weiche__los {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 0;
+  background: none;
+  color: #0b4f8f;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  border-radius: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+.weiche__los::after { content: none; }
+.weiche__karte:hover .weiche__los { background: none; }
+
+.weiche__hinweis { color: rgba(255, 255, 255, 0.86); }
+.weiche__hinweis a { color: #fff; }
+.weiche__hinweis a:hover { color: #fff; text-decoration-thickness: 3px; }
+
+/* QR-Schild oben rechts */
+@media (min-width: 84em), (min-width: 64em) and (hover: hover) and (pointer: fine) {
+  .hero--weiche .weiche__qr {
+    top: 0;
+    background: #ffffff;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+    border: 0;
+    border-radius: var(--radius-lg);
+    box-shadow: none;
+    padding: 0.8rem 1.4rem 0.8rem 0.8rem;
+  }
+  .hero--weiche .hero__qr { box-shadow: none; border-radius: 3px; }
+  .hero--weiche .hero__kontakt-label {
+    font-family: var(--font-sans);
+    font-size: 0.9375rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #0b4f8f;
+  }
+  .hero--weiche .hero__nummer { color: #0b3a69; font-family: var(--font-display); font-size: 2.1rem; font-weight: 700; }
+  .hero--weiche .hero__wa { color: #2f4357; }
+  .hero--weiche .hero__wa:hover { color: #0b3a69; }
+}
+
+/* ---------- Unterseiten-Kopf als Schild ---------- */
+.page-head {
+  background: var(--schild);
+  border-bottom: 0;
+}
+.page-head h1 { color: #fff; }
+.page-head .lede { color: rgba(255, 255, 255, 0.88); }
+.page-head .media { box-shadow: none !important; border: 6px solid #fff; border-radius: var(--radius-lg); }
+.page-head .tel-karte { background: #fff; border-color: #fff; box-shadow: none; }
+.page-head .tel-karte a { color: #0b3a69; }
+.page-head .tel-karte__label { color: #2f4357; }
+
+.sprungleiste__titel { color: rgba(255, 255, 255, 0.8); font-weight: 700; }
+.sprungleiste a {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  color: #fff;
+  border-radius: var(--radius);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.2rem;
+  box-shadow: none;
+}
+.sprungleiste a:hover { background: #fff; color: #0b4f8f; border-color: #fff; }
+
+/* Preise: Umschalter im Kopf */
+.page-head .preis-umschalter { background: rgba(255, 255, 255, 0.12); border-color: transparent; border-radius: var(--radius-lg); }
+.page-head .preis-tab { color: #fff; font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; border-radius: var(--radius); }
+.page-head .preis-tab.is-aktiv,
+.page-head .preis-tab[aria-selected='true'] { background: #fff; color: #0b4f8f; box-shadow: none; }
+
+/* ---------- Abschnitte ---------- */
+.section--sunken + .section { border-top: 0; }
+.section-head h2 { max-width: 22ch; }
+.section-head h2::before {
+  content: '';
+  display: block;
+  width: 3.5rem;
+  height: 6px;
+  margin-bottom: var(--sp-2);
+  background: var(--schild);
+}
+.cta-band h2::before { content: none; }
+
+/* Karten, Kästen, Panels: flach, klare Kante */
+.card,
+.contact-card,
+.price-panel,
+.note,
+.service-group,
+.rechner {
+  box-shadow: none;
+  border-radius: var(--radius-lg);
+}
+.card,
+.contact-card,
+.price-panel { border: 2px solid var(--line); }
+a.card:hover,
+.contact-card:hover { border-color: var(--accent); box-shadow: none; transform: none; }
+.card::before { display: none; }
+
+.note {
+  background: var(--bg-raised);
+  border: 2px solid var(--line);
+  border-left: 8px solid var(--schild);
+}
+.note strong { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; letter-spacing: 0; }
+
+.contact-card__icon,
+.card__icon {
+  border-radius: 4px;
+  background: var(--schild);
+  color: #fff;
+}
+.contact-card__icon { box-shadow: none; }
+.contact-card__label { font-family: var(--font-display); font-size: 1.25rem; font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--accent-text); }
+
+.service-item__icon { color: var(--accent-icon); }
+.area-list li {
+  border-radius: var(--radius);
+  border: 2px solid var(--line);
+  background: transparent;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Ablauf: Nummern wie Wegweiser-Ziffern */
+.step {
+  background: none;
+  border-top: 0;
+  padding-top: 0;
+}
+.step::before {
+  content: counter(step);
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: var(--sp-2);
+  border-radius: 4px;
+  background: var(--schild);
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.step__haken { stroke: var(--accent-icon); }
+
+/* Vertrauensband */
+.stat-band { background: var(--bg-sunken); border: 0; }
+.stat { border-top: 4px solid var(--schild); }
+.stat__value { font-size: clamp(1.9rem, 1.5rem + 1.2vw, 2.5rem); line-height: 1.05; }
+.stat__foto { border-radius: 4px; }
+
+/* Leistungsliste, Beispiele, FAQ */
+.example-list__value { font-size: 1.5rem; color: var(--accent-text); }
+.faq summary { font-family: var(--font-display); font-size: 1.45rem; font-weight: 600; letter-spacing: 0; }
+.faq summary:hover { color: var(--accent-text); }
+
+/* ---------- Abschlussband ---------- */
+.cta-band {
+  --cta-grund: var(--schild);
+  --cta-schrift: #ffffff;
+  background: var(--schild);
+  border: 0;
+  border-radius: var(--radius-lg);
+  box-shadow: none;
+}
+.cta-band::before,
+.cta-band::after { display: none; }
+:root[data-theme='dark'] .cta-band { --cta-grund: var(--schild); box-shadow: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .cta-band { --cta-grund: var(--schild); box-shadow: none; }
+}
+.cta-band .btn--primary { background: #fff; color: #0b4f8f; border-color: #fff; }
+.cta-band .btn--primary:hover { background: #e4edf7; color: #0b3a69; border-color: #e4edf7; }
+.cta-band .btn--ghost { background: transparent; border-color: rgba(255, 255, 255, 0.7); color: #fff; }
+.cta-band .btn--ghost:hover { background: rgba(255, 255, 255, 0.12); border-color: #fff; color: #fff; }
+.cta-band .tel-karte { background: #fff; box-shadow: none; border-color: #fff; }
+.cta-band .tel-karte a { color: #0b3a69; }
+.cta-band .tel-karte__label { color: #2f4357; }
+.cta-band__orte::before { display: none; }
+
+/* ---------- Fuß ---------- */
+.footer,
+:root[data-theme='dark'] .footer { background: var(--schild-tief); border-top: 0; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .footer { background: var(--schild-tief); }
+}
+.footer h2 { font-family: var(--font-display); font-size: 1.5rem; letter-spacing: 0; text-transform: none; color: #fff; }
+.footer h2::before { display: none; }
+.footer a:hover { color: #fff; }
+.footer__wortmarke {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- Anrufleiste mobil ---------- */
+.callbar { background: var(--bg); border-top: 4px solid var(--schild); box-shadow: none; }
+.callbar .btn--ghost { border-color: var(--schild); color: var(--accent-text); }
+
+/* ---------- Karte: Akzent folgt dem Blau ---------- */
+.karte__kreis--10 { fill: var(--accent-wash); stroke: var(--accent); }
+
+/* ---------- Mobil ---------- */
+@media (max-width: 40em) {
+  .hero.hero--weiche { padding-block: var(--sp-5) var(--sp-5); }
+  .weiche__karte,
+  .weiche__karte:first-child {
+    --spitze: 1.8rem;
+    padding: var(--sp-2) calc(var(--spitze) + var(--sp-2)) var(--sp-2) var(--sp-3);
+    clip-path: polygon(0 0, calc(100% - var(--spitze)) 0, 100% 50%, calc(100% - var(--spitze)) 100%, 0 100%);
+  }
+  .weiche__karte:first-child:hover { transform: translateX(6px); }
+  .weiche__titel { font-size: 2.1rem; }
+  .nav__link { font-size: 1.2rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .weiche__karte,
+  .weiche__karte:hover,
+  .weiche__karte:first-child:hover { transition: none; transform: none; }
+}
+
+/* ---------- Feinschliff nach erster Durchsicht ---------- */
+.stat-band { background: var(--bg); }
+.step h3 { font-size: clamp(1.6rem, 1.4rem + 0.6vw, 1.95rem); margin-bottom: 0.35rem; }
+.service-item h3 { font-size: 1.45rem; font-weight: 600; line-height: 1.15; margin-bottom: 0.25rem; }
+.service-group__head h2 { font-size: clamp(2rem, 1.6rem + 1.4vw, 2.7rem); }
+/* Senioren-Block: Foto stand bisher gequetscht neben dem Text */
+.service-group > .split { display: grid; grid-template-columns: 1fr; gap: var(--sp-3); align-items: start; }
+.service-group > .split .media { width: 100%; max-width: 24rem; border-radius: var(--radius-lg); overflow: hidden; }
+.privat-hinweis h3 { font-size: 1.75rem; }
+
+/* Leistungen für Unternehmen sind keine Reihenfolge: keine Nummern */
+.leistungsliste h3::before { content: none; display: none; }
+body { font-size: 1.1875rem; }
+
+/* Anrufleiste und Kopf-Knöpfe: flach statt Glas */
+.callbar,
+.js:not(.glas-bereit) .callbar {
+  left: 0; right: 0; bottom: 0;
+  padding: 0.6rem 0.75rem calc(0.6rem + env(safe-area-inset-bottom));
+  background: var(--bg);
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+  border: 0;
+  border-top: 4px solid var(--schild);
+  border-radius: 0;
+  box-shadow: none;
+}
+body.is-locked .callbar { right: var(--sb, 0px); }
+.callbar .btn { border-radius: var(--radius); }
+.callbar .btn--primary { background: var(--schild); border-color: var(--schild); color: #fff; box-shadow: none; }
+.callbar .btn--ghost { background: transparent; border-color: var(--schild); color: var(--accent-text); box-shadow: none; }
+:root[data-theme='dark'] .callbar .btn--ghost { border-color: var(--accent); }
+.header .theme-toggle,
+.header .burger { background: transparent; border: 2px solid var(--line); box-shadow: none; }
+
+.page-head h1 { font-size: clamp(2.6rem, 1.7rem + 3.2vw, 4.4rem); }
