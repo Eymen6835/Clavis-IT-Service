@@ -49,8 +49,14 @@ const server = http.createServer((req, res) => {
   }
 
   if (!filePath) {
-    res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
-    res.end('404 Nicht gefunden');
+    const seite404 = path.join(ROOT, '404.html');
+    if (fs.existsSync(seite404)) {
+      res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
+      fs.createReadStream(seite404).pipe(res);
+    } else {
+      res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+      res.end('404 Nicht gefunden');
+    }
     return;
   }
 

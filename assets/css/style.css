@@ -3129,3 +3129,8 @@ body { padding-bottom: 0; }
 }
 .weiche__text { margin-bottom: var(--sp-2); }
 @media (max-width: 40em) { .weiche__text { margin-bottom: 0.5rem; } }
+
+/* Lange Button-Beschriftungen auf schmalen Bildschirmen umbrechen */
+@media (max-width: 40em) {
+  .page-head .btn-row .btn { white-space: normal; text-align: center; width: 100%; line-height: 1.3; }
+}
