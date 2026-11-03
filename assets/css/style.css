@@ -3169,3 +3169,48 @@ body { padding-bottom: 0; }
 @media (prefers-reduced-motion: reduce) {
   .hero__wa-knopf { transition: none; }
 }
+
+
+/* ===== Fernwartung starten ===== */
+.fw { display: grid; gap: var(--sp-5); align-items: start; }
+@media (min-width: 56em) { .fw { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); } }
+.fw__karte {
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--card-shadow);
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  display: grid; gap: 1rem; justify-items: start;
+  position: relative; overflow: hidden;
+}
+.fw__karte::before {
+  content: ""; position: absolute; inset: 0 0 auto 0; height: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+}
+.fw__system {
+  font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent-text);
+}
+.fw__knopf { font-size: 1.08rem; padding: 1rem 1.5rem; white-space: normal; text-align: left; }
+.fw__knopf svg { width: 1.3rem; height: 1.3rem; flex: none; transition: transform var(--dur-hover) var(--ease-out); }
+@media (hover: hover) { .fw__knopf:hover svg { transform: translateY(2px); } }
+.fw__alternativ, .fw__quelle, .fw__hinweis { font-size: 0.92rem; color: var(--ink-muted); }
+.fw__alternativ a, .fw__quelle a { color: var(--ink); }
+.fw__hinweis { padding: 0.75rem 1rem; border-radius: var(--radius); background: var(--accent-wash); color: var(--ink); }
+.fw__hinweis[hidden] { display: none; }
+.fw__quelle { padding-top: 0.75rem; border-top: 1px solid var(--line); justify-self: stretch; }
+.fw__schritte { list-style: none; margin: 0; padding: 0; counter-reset: fw; display: grid; gap: var(--sp-4); }
+.fw__schritte li {
+  counter-increment: fw; position: relative; padding-left: 3.4rem;
+  display: grid; gap: 0.5rem; justify-items: start;
+}
+.fw__schritte li::before {
+  content: counter(fw); position: absolute; left: 0; top: -0.1rem;
+  width: 2.4rem; height: 2.4rem; border-radius: 50%;
+  display: grid; place-items: center;
+  font-family: var(--font-brand); font-weight: 700;
+  background: var(--accent-wash); color: var(--accent-text);
+  border: 1px solid var(--accent);
+}
+.fw__schritte h2 { font-size: 1.2rem; margin: 0; }
+.fw__schritte p { margin: 0; color: var(--ink-muted); }

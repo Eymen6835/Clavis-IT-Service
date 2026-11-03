@@ -284,6 +284,29 @@
     observer.observe(element);
   });
 
+  /* Fernwartung: passenden Download fuer Windows oder macOS waehlen */
+  var fwKnopf = document.querySelector('[data-fw-download]');
+  if (fwKnopf) {
+    var ua = navigator.userAgent || '';
+    var plattform = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || '';
+    var istMobil = /Android|iPhone|iPod/i.test(ua) || (/iPad/i.test(ua)) || (/Mac/i.test(plattform) && navigator.maxTouchPoints > 1);
+    var istMac = !istMobil && /Mac/i.test(plattform + ' ' + ua);
+    var systemText = document.querySelector('[data-fw-system]');
+    var label = document.querySelector('[data-fw-label]');
+    if (istMac) {
+      fwKnopf.href = 'https://download.teamviewer.com/download/TeamViewerQS.dmg';
+      if (systemText) systemText.textContent = 'Erkannt: macOS';
+      if (label) label.textContent = 'Fernwartung für Mac herunterladen';
+    } else if (istMobil) {
+      var mobilHinweis = document.querySelector('[data-fw-mobil]');
+      if (mobilHinweis) mobilHinweis.hidden = false;
+      if (systemText) systemText.textContent = 'Für Windows und macOS';
+    } else if (/Win/i.test(plattform + ' ' + ua)) {
+      if (systemText) systemText.textContent = 'Erkannt: Windows';
+      if (label) label.textContent = 'Fernwartung für Windows herunterladen';
+    }
+  }
+
   if (window.location.protocol === 'file:') {
     document.addEventListener('click', function (event) {
       var link = event.target.closest('a[href]');
