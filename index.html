@@ -27,9 +27,11 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Clavis IT">
 <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/style.css?v=2026-11-03-fw">
+<link rel="stylesheet" href="assets/css/design-quadrate.css?v=1">
 
 <script src="assets/js/darstellung.js?v=2026-10-18-hell"></script>
 
@@ -243,25 +245,13 @@
 
 <main id="main">
 
-  <section class="hero hero--weiche">
-    <div class="wrap">
-      <div class="hero__inner">
+  <section class="hero hero--quadrate">
+    <div class="wrap hq">
+      <div class="hero__inner hq__text">
         <h1>
           <span class="hero__claim">IT-Hilfe in Mannheim. <span class="hero__zusatz">Bei Ihnen vor Ort oder per Fernwartung.</span></span>
           <span class="hero__kicker">Clavis IT Service: persönliche IT-Betreuung für Privathaushalte, Senioren und kleine Unternehmen</span>
         </h1>
-
-        <div class="hero__kontakt weiche__qr">
-          <img class="hero__qr" src="assets/img/qr-anrufen.svg" width="25" height="25" alt="QR-Code: Mit dem Handy scannen, um 0162 63270 36 anzurufen">
-          <div class="hero__kontakt-text">
-            <span class="hero__kontakt-label">Scannen und direkt anrufen</span>
-            <a class="hero__nummer" href="tel:+491626327036">0162 63270 36</a>
-          </div>
-          <a class="hero__wa-knopf" href="https://wa.me/491626327036?text=Guten%20Tag%2C%20ich%20br%C3%A4uchte%20Hilfe%20bei%20folgendem%20Problem%3A%20" rel="noopener" aria-label="Per WhatsApp schreiben">
-            <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
-            <span>Schreiben</span>
-          </a>
-        </div>
 
         <h2 class="weiche__frage" id="weiche-frage">Für wen suchen Sie Unterstützung?</h2>
         <nav class="weiche" aria-labelledby="weiche-frage">
@@ -282,13 +272,106 @@
         <p class="weiche__hinweis">Nicht sicher, was passt? Rufen Sie an: <a href="tel:+491626327036">0162&nbsp;63270&nbsp;36</a> oder schreiben Sie per <a href="https://wa.me/491626327036?text=Guten%20Tag%2C%20ich%20br%C3%A4uchte%20Hilfe%20bei%20folgendem%20Problem%3A%20" rel="noopener">WhatsApp</a>.</p>
       </div>
 
-      <figure class="hero__bild" aria-hidden="true">
-        <picture>
-          <source type="image/webp" srcset="assets/img/arbeitsplatz-720.webp 720w, assets/img/arbeitsplatz-1200.webp 1200w, assets/img/arbeitsplatz-1800.webp 1800w" sizes="(min-width: 64em) 58vw, 100vw">
-          <img src="assets/img/arbeitsplatz-1200.jpg" srcset="assets/img/arbeitsplatz-720.jpg 720w, assets/img/arbeitsplatz-1200.jpg 1200w, assets/img/arbeitsplatz-1800.jpg 1800w" sizes="(min-width: 64em) 58vw, 100vw"
-               width="1800" height="1201" alt="" fetchpriority="high" decoding="async">
-        </picture>
-      </figure>
+      <aside class="hq__tafel" aria-label="Kontakt und Einsatzgebiet">
+        <svg class="hq__plan" viewBox="0 0 420 420" role="img" aria-labelledby="hq-plan-titel">
+          <title id="hq-plan-titel">Skizze der Mannheimer Quadrate: eine Linie führt von Käfertal zu einem Block in der Innenstadt.</title>
+          <path class="hq__fluss" d="M-10 78 C 90 56, 200 88, 300 60 S 400 8, 440 22"/>
+          <path class="hq__ring" d="M25.0 356 A 181.0 262 0 0 1 387.0 356"/>
+          <g class="hq__bloecke">
+            <rect x="135" y="118" width="22" height="22" rx="2"/>
+            <rect x="165" y="118" width="22" height="22" rx="2"/>
+            <rect x="195" y="118" width="22" height="22" rx="2"/>
+            <rect x="225" y="118" width="22" height="22" rx="2"/>
+            <rect x="255" y="118" width="22" height="22" rx="2"/>
+            <rect x="105" y="148" width="22" height="22" rx="2"/>
+            <rect x="135" y="148" width="22" height="22" rx="2"/>
+            <rect x="165" y="148" width="22" height="22" rx="2"/>
+            <rect x="195" y="148" width="22" height="22" rx="2"/>
+            <rect x="225" y="148" width="22" height="22" rx="2"/>
+            <rect x="255" y="148" width="22" height="22" rx="2"/>
+            <rect x="285" y="148" width="22" height="22" rx="2"/>
+            <rect x="75" y="178" width="22" height="22" rx="2"/>
+            <rect x="105" y="178" width="22" height="22" rx="2"/>
+            <rect x="135" y="178" width="22" height="22" rx="2"/>
+            <rect x="165" y="178" width="22" height="22" rx="2"/>
+            <rect x="195" y="178" width="22" height="22" rx="2"/>
+            <rect x="225" y="178" width="22" height="22" rx="2"/>
+            <rect x="255" y="178" width="22" height="22" rx="2"/>
+            <rect x="285" y="178" width="22" height="22" rx="2"/>
+            <rect x="315" y="178" width="22" height="22" rx="2"/>
+            <rect x="75" y="208" width="22" height="22" rx="2"/>
+            <rect x="105" y="208" width="22" height="22" rx="2"/>
+            <rect x="135" y="208" width="22" height="22" rx="2"/>
+            <rect x="165" y="208" width="22" height="22" rx="2"/>
+            <rect x="195" y="208" width="22" height="22" rx="2"/>
+            <rect x="225" y="208" width="22" height="22" rx="2"/>
+            <rect x="255" y="208" width="22" height="22" rx="2"/>
+            <rect x="285" y="208" width="22" height="22" rx="2"/>
+            <rect x="315" y="208" width="22" height="22" rx="2"/>
+            <rect x="75" y="238" width="22" height="22" rx="2"/>
+            <rect x="105" y="238" width="22" height="22" rx="2"/>
+            <rect x="135" y="238" width="22" height="22" rx="2"/>
+            <rect x="165" y="238" width="22" height="22" rx="2"/>
+            <rect x="195" y="238" width="22" height="22" rx="2"/>
+            <rect x="225" y="238" width="22" height="22" rx="2"/>
+            <rect x="285" y="238" width="22" height="22" rx="2"/>
+            <rect x="315" y="238" width="22" height="22" rx="2"/>
+            <rect x="45" y="268" width="22" height="22" rx="2"/>
+            <rect x="75" y="268" width="22" height="22" rx="2"/>
+            <rect x="105" y="268" width="22" height="22" rx="2"/>
+            <rect x="135" y="268" width="22" height="22" rx="2"/>
+            <rect x="165" y="268" width="22" height="22" rx="2"/>
+            <rect x="195" y="268" width="22" height="22" rx="2"/>
+            <rect x="225" y="268" width="22" height="22" rx="2"/>
+            <rect x="255" y="268" width="22" height="22" rx="2"/>
+            <rect x="285" y="268" width="22" height="22" rx="2"/>
+            <rect x="315" y="268" width="22" height="22" rx="2"/>
+            <rect x="345" y="268" width="22" height="22" rx="2"/>
+            <rect x="45" y="298" width="22" height="22" rx="2"/>
+            <rect x="75" y="298" width="22" height="22" rx="2"/>
+            <rect x="105" y="298" width="22" height="22" rx="2"/>
+            <rect x="135" y="298" width="22" height="22" rx="2"/>
+            <rect x="165" y="298" width="22" height="22" rx="2"/>
+            <rect x="195" y="298" width="22" height="22" rx="2"/>
+            <rect x="225" y="298" width="22" height="22" rx="2"/>
+            <rect x="255" y="298" width="22" height="22" rx="2"/>
+            <rect x="285" y="298" width="22" height="22" rx="2"/>
+            <rect x="315" y="298" width="22" height="22" rx="2"/>
+            <rect x="345" y="298" width="22" height="22" rx="2"/>
+            <rect x="45" y="328" width="22" height="22" rx="2"/>
+            <rect x="75" y="328" width="22" height="22" rx="2"/>
+            <rect x="105" y="328" width="22" height="22" rx="2"/>
+            <rect x="135" y="328" width="22" height="22" rx="2"/>
+            <rect x="165" y="328" width="22" height="22" rx="2"/>
+            <rect x="195" y="328" width="22" height="22" rx="2"/>
+            <rect x="225" y="328" width="22" height="22" rx="2"/>
+            <rect x="255" y="328" width="22" height="22" rx="2"/>
+            <rect x="285" y="328" width="22" height="22" rx="2"/>
+            <rect x="315" y="328" width="22" height="22" rx="2"/>
+            <rect x="345" y="328" width="22" height="22" rx="2"/>
+          </g>
+          <rect class="hq__schloss" x="86" y="368" width="240" height="16" rx="3"/>
+          <text class="hq__ort hq__ort--klein" x="206" y="402" text-anchor="middle">Schloss</text>
+          <path class="hq__weg" pathLength="1" d="M372 68 V101 H251.0 V249.0"/>
+          <rect class="hq__ziel" x="255" y="238" width="22" height="22" rx="2"/>
+          <g class="hq__schluessel" transform="translate(359 30)">
+            <circle cx="13" cy="10" r="8.5"/><circle class="hq__loch" cx="13" cy="10" r="3"/>
+            <path d="M13 18.5 V36 M13 27 h6 M13 32.5 h4.5"/>
+          </g>
+          <text class="hq__ort" x="346" y="50" text-anchor="end">Käfertal</text>
+        </svg>
+        <div class="hero__kontakt weiche__qr">
+          <img class="hero__qr" src="assets/img/qr-anrufen.svg" width="25" height="25" alt="QR-Code: Mit dem Handy scannen, um 0162 63270 36 anzurufen">
+          <div class="hero__kontakt-text">
+            <span class="hero__kontakt-label">Scannen und direkt anrufen</span>
+            <a class="hero__nummer" href="tel:+491626327036">0162 63270 36</a>
+          </div>
+          <a class="hero__wa-knopf" href="https://wa.me/491626327036?text=Guten%20Tag%2C%20ich%20br%C3%A4uchte%20Hilfe%20bei%20folgendem%20Problem%3A%20" rel="noopener" aria-label="Per WhatsApp schreiben">
+            <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            <span>Schreiben</span>
+          </a>
+        </div>
+      </aside>
     </div>
   </section>
 
