@@ -10,6 +10,9 @@
   var anfrageLink = root.querySelector('[data-anfrage]');
   var mailBetreff = 'Anfrage%20Wartungsvertrag';
   var mailAdresse = 'kontakt@clavis-itservice.de';
+  // Mindestbetrag je Vertrag und Monat (netto), z. B. für Ein-Personen-Betriebe
+  var mindestbetrag = parseFloat(root.getAttribute('data-mindestbetrag')) || 0;
+  var mindestHinweis = root.querySelector('[data-mindest-hinweis]');
 
   function formatEuro(betrag) {
     return betrag.toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
@@ -34,14 +37,20 @@
   }
 
   function gesamtAktualisieren() {
-    var gesamt = zeilen.reduce(function (summe, zeile) {
+    var zwischensumme = zeilen.reduce(function (summe, zeile) {
       return summe + zeilenWert(zeile).summe;
     }, 0);
+    var gesamt = Math.max(zwischensumme, mindestbetrag);
+    var mindestGreift = gesamt > zwischensumme;
     if (summeEl) summeEl.textContent = formatEuro(gesamt);
-    if (anfrageLink) anfrageLink.href = mailtoHref(gesamt);
+    if (mindestHinweis) {
+      var betrag = formatEuro(mindestbetrag).replace(',00', '');
+      mindestHinweis.textContent = (mindestGreift ? 'Mindestbetrag ' : 'mindestens ') + betrag + ' im Monat';
+    }
+    if (anfrageLink) anfrageLink.href = mailtoHref(gesamt, mindestGreift);
   }
 
-  function mailtoHref(gesamt) {
+  function mailtoHref(gesamt, mindestGreift) {
     var zeilen2 = zeilen
       .map(function (zeile) {
         var werte = zeilenWert(zeile);
@@ -58,6 +67,7 @@
       zeilen2.map(encodeURIComponent).join('%0D%0A') +
       '%0D%0A%0D%0AMonatsbeitrag (unverbindliche Kalkulation): ' +
       encodeURIComponent(formatEuro(gesamt).replace(' ', ' ')) +
+      (mindestGreift ? encodeURIComponent(' (Mindestbetrag)') : '') +
       ' netto zzgl. 19%25 USt.%0D%0A%0D%0ABitte melden Sie sich bei mir.';
 
     return 'mailto:' + mailAdresse + '?subject=' + mailBetreff + '&body=' + body;

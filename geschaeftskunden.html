@@ -84,12 +84,12 @@
         "name": "IT-Wartungsvertrag für Unternehmen",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "300",
+          "price": "99",
           "unitText": "je Arbeitsplatz und Monat",
           "priceCurrency": "EUR",
           "unitCode": "MON",
           "valueAddedTaxIncluded": false,
-          "description": "Für Unternehmen ausschließlich im Wartungsvertrag: 300 € netto je Arbeitsplatz und Monat, zzgl. 19 % USt. Server, Netzwerk und weitere Geräte nach Aufwand. Drei Stunden inklusive, weitere Stunden 49 € netto, Mindestlaufzeit drei Monate, danach monatlich kündbar."
+          "description": "Für Unternehmen ausschließlich im Wartungsvertrag: 99 € netto je Arbeitsplatz und Monat, mindestens 199 € netto im Monat, zzgl. 19 % USt. Server, Netzwerk und weitere Geräte nach Aufwand. Drei Stunden inklusive, weitere Stunden 49 € netto, Mindestlaufzeit drei Monate, danach monatlich kündbar."
         }
       },
       "hasOfferCatalog": {
@@ -370,11 +370,11 @@
       <div class="price-panel reveal" id="wartungsvertrag">
         <div>
           <div class="price-figure">
-            <span class="price-figure__value">300&nbsp;€</span>
+            <span class="price-figure__value">99&nbsp;€</span>
             <span class="price-figure__unit">netto je Arbeitsplatz und Monat</span>
           </div>
           <p>
-            Ein Arbeitsplatz ist ein Mitarbeiter mit seinem Computer oder Notebook. Server, Netzwerk und weitere Geräte kommen je nach Bedarf dazu; den Betrag stellen Sie unten für Ihren Betrieb zusammen. Zzgl. 19 % USt. Drei Stunden sind inklusive. Was über die drei Stunden hinausgeht, berechne ich mit 49 € netto pro Stunde. Der Vertrag läuft mindestens drei Monate, danach ist er monatlich kündbar.
+            Ein Arbeitsplatz ist ein Mitarbeiter mit seinem Computer oder Notebook. Server, Netzwerk und weitere Geräte kommen je nach Bedarf dazu; den Betrag stellen Sie unten für Ihren Betrieb zusammen. Der Mindestbetrag liegt bei 199&nbsp;€ im Monat. Zzgl. 19 % USt. Drei Stunden sind inklusive. Was über die drei Stunden hinausgeht, berechne ich mit 49 € netto pro Stunde. Der Vertrag läuft mindestens drei Monate, danach ist er monatlich kündbar.
           </p>
           <div class="btn-row" style="margin-top: var(--sp-3)">
             <a class="btn btn--ghost" href="#rechner">Vertrag berechnen</a>
@@ -397,10 +397,10 @@
         <h3 style="margin-bottom: 0.3rem">Was das für Ihren Betrieb bedeutet</h3>
         <p style="color: var(--ink-muted)">Monatsbetrag netto zzgl. 19 % USt., ohne Server, Netzwerk und weitere Geräte.</p>
         <ul class="example-list" style="margin-top: var(--sp-2)">
-          <li><div class="example-list__label">1 Arbeitsplatz<span>Zum Beispiel Selbstständige im Büro oder Homeoffice</span></div><div class="example-list__value">300 €</div></li>
-          <li><div class="example-list__label">3 Arbeitsplätze</div><div class="example-list__value">900 €</div></li>
-          <li><div class="example-list__label">5 Arbeitsplätze</div><div class="example-list__value">1.500 €</div></li>
-          <li><div class="example-list__label">10 Arbeitsplätze</div><div class="example-list__value">3.000 €</div></li>
+          <li><div class="example-list__label">1 Arbeitsplatz<span>Mindestbetrag, zum Beispiel für Selbstständige im Büro oder Homeoffice</span></div><div class="example-list__value">199 €</div></li>
+          <li><div class="example-list__label">3 Arbeitsplätze</div><div class="example-list__value">297 €</div></li>
+          <li><div class="example-list__label">5 Arbeitsplätze</div><div class="example-list__value">495 €</div></li>
+          <li><div class="example-list__label">10 Arbeitsplätze</div><div class="example-list__value">990 €</div></li>
         </ul>
       </div>
 
@@ -416,19 +416,19 @@
         <p style="color: var(--ink-muted); max-width: 52rem">Stellen Sie zusammen, was zu Ihrem Betrieb gehört. Die Summe ist eine unverbindliche Kalkulation, den endgültigen Betrag lege ich nach einer kurzen Bestandsaufnahme fest.</p>
       </div>
 
-      <div class="rechner reveal" id="vertragsrechner" data-rechner style="margin-top: var(--sp-3)">
+      <div class="rechner reveal" id="vertragsrechner" data-rechner data-mindestbetrag="199" style="margin-top: var(--sp-3)">
         <ul class="rechner__liste">
-          <li class="rechner__zeile" data-zeile data-preis="300" data-einheit="Arbeitsplatz" data-anzahl="1" data-min="1">
+          <li class="rechner__zeile" data-zeile data-preis="99" data-einheit="Arbeitsplatz" data-anzahl="1" data-min="1">
             <div class="rechner__info">
               <span class="rechner__label">Arbeitsplätze</span>
-              <span class="rechner__hinweis">Ein Mitarbeiter mit Computer oder Notebook &middot; 300&nbsp;€ je Arbeitsplatz und Monat</span>
+              <span class="rechner__hinweis">Ein Mitarbeiter mit Computer oder Notebook &middot; 99&nbsp;€ je Arbeitsplatz und Monat</span>
             </div>
             <div class="rechner__steller">
               <button type="button" class="rechner__btn" data-aktion="minus" aria-label="Anzahl Arbeitsplätze verringern">&minus;</button>
               <output class="rechner__anzahl" data-anzeige>1</output>
               <button type="button" class="rechner__btn" data-aktion="plus" aria-label="Anzahl Arbeitsplätze erhöhen">+</button>
             </div>
-            <span class="rechner__zeilensumme" data-zeilensumme>300,00&nbsp;€</span>
+            <span class="rechner__zeilensumme" data-zeilensumme>99,00&nbsp;€</span>
           </li>
 
           <li class="rechner__zeile" data-zeile data-preis="10" data-einheit="VM" data-anzahl="0" data-min="0">
@@ -552,8 +552,8 @@
         <div class="rechner__summe">
           <div>
             <span class="rechner__summe-label">Monatsbeitrag</span>
-            <span class="rechner__summe-wert" data-summe>300,00&nbsp;€</span>
-            <span class="rechner__summe-hinweis">netto zzgl. 19&nbsp;% USt. &middot; Mindestlaufzeit 3&nbsp;Monate, danach monatlich kündbar &middot; keine Staffelpreise</span>
+            <span class="rechner__summe-wert" data-summe>199,00&nbsp;€</span>
+            <span class="rechner__summe-hinweis">netto zzgl. 19&nbsp;% USt. &middot; <span data-mindest-hinweis>mindestens 199&nbsp;€ im Monat</span> &middot; Mindestlaufzeit 3&nbsp;Monate, danach monatlich kündbar &middot; keine Staffelpreise</span>
           </div>
           <div class="btn-row">
             <button type="button" class="btn btn--ghost" data-reset>Zurücksetzen</button>
@@ -755,6 +755,6 @@
 </div>
 
 <script src="assets/js/main.js?v=2026-11-03-fw" defer></script>
-<script src="assets/js/rechner.js?v=2026-10-31-wartungsvertrag" defer></script>
+<script src="assets/js/rechner.js?v=2026-11-04-mindestbetrag" defer></script>
 </body>
 </html>
