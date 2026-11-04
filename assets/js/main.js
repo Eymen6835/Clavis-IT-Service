@@ -81,10 +81,10 @@
 
   function faerbeLeiste() {
     if (!leiste) return;
-    var farbe = currentTheme() === 'dark' ? '#081426' : '#faf8f3';
-    if (farbe === '#faf8f3' && kopf && fuss &&
+    var farbe = currentTheme() === 'dark' ? '#0b111b' : '#fbfaf7';
+    if (farbe === '#fbfaf7' && kopf && fuss &&
         fuss.getBoundingClientRect().top < kopf.getBoundingClientRect().bottom) {
-      farbe = '#8190a8';
+      farbe = '#7d8999';
     }
     if (leiste.getAttribute('content') !== farbe) leiste.setAttribute('content', farbe);
   }
