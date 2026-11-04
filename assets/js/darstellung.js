@@ -8,7 +8,7 @@
   d.setAttribute('data-theme', t);
   if (t === 'dark') {
     var m = document.querySelector('meta[name="theme-color"]');
-    if (m) m.content = '#0b111b';
+    if (m) m.content = '#08171a';
   }
 
   try {

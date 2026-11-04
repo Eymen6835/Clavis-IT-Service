@@ -1,120 +1,120 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" width="1600" height="1067" role="img" aria-label="Illustration eines kleinen Büros mit zwei Arbeitsplätzen, Netzwerkschrank, WLAN und gesicherten Daten">
   <!-- Wand und Boden -->
-  <rect width="1600" height="1067" fill="#EFF1F5"/>
-  <rect y="760" width="1600" height="307" fill="#DDE2EA"/>
-  <rect y="756" width="1600" height="8" fill="#C3CBD7"/>
+  <rect width="1600" height="1067" fill="#e8f1ef"/>
+  <rect y="760" width="1600" height="307" fill="#d3e3e0"/>
+  <rect y="756" width="1600" height="8" fill="#bccfcb"/>
 
   <!-- Fenster -->
   <g>
-    <rect x="120" y="110" width="420" height="380" rx="10" fill="#FFFFFF" stroke="#C3CBD7" stroke-width="8"/>
-    <rect x="140" y="130" width="380" height="340" fill="#DCE8F3"/>
-    <path d="M140 400 L230 320 L300 370 L390 280 L520 390 V470 H140 Z" fill="#C9D8E6"/>
-    <circle cx="440" cy="190" r="34" fill="#F6D9A6"/>
-    <rect x="326" y="130" width="8" height="340" fill="#FFFFFF"/>
-    <rect x="140" y="296" width="380" height="8" fill="#FFFFFF"/>
-    <rect x="100" y="488" width="460" height="18" rx="4" fill="#C3CBD7"/>
+    <rect x="120" y="110" width="420" height="380" rx="10" fill="#ffffff" stroke="#bccfcb" stroke-width="8"/>
+    <rect x="140" y="130" width="380" height="340" fill="#d6ebe7"/>
+    <path d="M140 400 L230 320 L300 370 L390 280 L520 390 V470 H140 Z" fill="#c4ddd9"/>
+    <circle cx="440" cy="190" r="34" fill="#b8ece4"/>
+    <rect x="326" y="130" width="8" height="340" fill="#ffffff"/>
+    <rect x="140" y="296" width="380" height="8" fill="#ffffff"/>
+    <rect x="100" y="488" width="460" height="18" rx="4" fill="#bccfcb"/>
   </g>
 
   <!-- Regal mit Ordnern -->
   <g>
-    <rect x="1180" y="130" width="300" height="14" rx="3" fill="#495568"/>
-    <rect x="1200" y="58" width="34" height="72" rx="3" fill="#0F1B2D"/>
-    <rect x="1240" y="58" width="34" height="72" rx="3" fill="#E8A33D"/>
-    <rect x="1280" y="58" width="34" height="72" rx="3" fill="#586177"/>
-    <rect x="1320" y="58" width="34" height="72" rx="3" fill="#0F1B2D"/>
-    <rect x="1372" y="92" width="80" height="38" rx="4" fill="#FFFFFF" stroke="#C3CBD7" stroke-width="4"/>
-    <rect x="1180" y="270" width="300" height="14" rx="3" fill="#495568"/>
-    <rect x="1200" y="210" width="60" height="60" rx="30" fill="#7FA88A"/>
-    <rect x="1214" y="232" width="32" height="38" rx="4" fill="#FFFFFF" stroke="#C3CBD7" stroke-width="4"/>
-    <rect x="1290" y="198" width="34" height="72" rx="3" fill="#586177"/>
-    <rect x="1330" y="198" width="34" height="72" rx="3" fill="#E8A33D"/>
-    <rect x="1370" y="198" width="34" height="72" rx="3" fill="#0F1B2D"/>
+    <rect x="1180" y="130" width="300" height="14" rx="3" fill="#435a5e"/>
+    <rect x="1200" y="58" width="34" height="72" rx="3" fill="#0b2428"/>
+    <rect x="1240" y="58" width="34" height="72" rx="3" fill="#2bb3a3"/>
+    <rect x="1280" y="58" width="34" height="72" rx="3" fill="#52666a"/>
+    <rect x="1320" y="58" width="34" height="72" rx="3" fill="#0b2428"/>
+    <rect x="1372" y="92" width="80" height="38" rx="4" fill="#ffffff" stroke="#bccfcb" stroke-width="4"/>
+    <rect x="1180" y="270" width="300" height="14" rx="3" fill="#435a5e"/>
+    <rect x="1200" y="210" width="60" height="60" rx="30" fill="#7fa88a"/>
+    <rect x="1214" y="232" width="32" height="38" rx="4" fill="#ffffff" stroke="#bccfcb" stroke-width="4"/>
+    <rect x="1290" y="198" width="34" height="72" rx="3" fill="#52666a"/>
+    <rect x="1330" y="198" width="34" height="72" rx="3" fill="#2bb3a3"/>
+    <rect x="1370" y="198" width="34" height="72" rx="3" fill="#0b2428"/>
   </g>
 
   <!-- WLAN-Accesspoint an der Decke/Wand mit Signal -->
   <g>
-    <rect x="740" y="60" width="120" height="30" rx="15" fill="#FFFFFF" stroke="#C3CBD7" stroke-width="5"/>
-    <circle cx="800" cy="75" r="5" fill="#E8A33D"/>
-    <path d="M740 140 A85 85 0 0 1 860 140" fill="none" stroke="#E8A33D" stroke-width="10" stroke-linecap="round"/>
-    <path d="M705 178 A135 135 0 0 1 895 178" fill="none" stroke="#E8A33D" stroke-width="10" stroke-linecap="round" opacity="0.65"/>
-    <path d="M670 216 A185 185 0 0 1 930 216" fill="none" stroke="#E8A33D" stroke-width="10" stroke-linecap="round" opacity="0.35"/>
+    <rect x="740" y="60" width="120" height="30" rx="15" fill="#ffffff" stroke="#bccfcb" stroke-width="5"/>
+    <circle cx="800" cy="75" r="5" fill="#2bb3a3"/>
+    <path d="M740 140 A85 85 0 0 1 860 140" fill="none" stroke="#2bb3a3" stroke-width="10" stroke-linecap="round"/>
+    <path d="M705 178 A135 135 0 0 1 895 178" fill="none" stroke="#2bb3a3" stroke-width="10" stroke-linecap="round" opacity="0.65"/>
+    <path d="M670 216 A185 185 0 0 1 930 216" fill="none" stroke="#2bb3a3" stroke-width="10" stroke-linecap="round" opacity="0.35"/>
   </g>
 
   <!-- Netzwerkschrank -->
   <g>
-    <rect x="1250" y="430" width="230" height="420" rx="12" fill="#0F1B2D"/>
-    <rect x="1270" y="452" width="190" height="56" rx="6" fill="#1D2C44"/>
-    <circle cx="1294" cy="480" r="6" fill="#7FC98F"/>
-    <circle cx="1316" cy="480" r="6" fill="#7FC98F"/>
-    <rect x="1340" y="472" width="100" height="16" rx="3" fill="#2C3E5A"/>
-    <rect x="1270" y="522" width="190" height="56" rx="6" fill="#1D2C44"/>
-    <g fill="#E8A33D"><rect x="1286" y="542" width="14" height="14" rx="2"/><rect x="1308" y="542" width="14" height="14" rx="2"/><rect x="1330" y="542" width="14" height="14" rx="2"/><rect x="1352" y="542" width="14" height="14" rx="2"/><rect x="1374" y="542" width="14" height="14" rx="2"/><rect x="1396" y="542" width="14" height="14" rx="2"/><rect x="1418" y="542" width="14" height="14" rx="2"/></g>
-    <rect x="1270" y="592" width="190" height="96" rx="6" fill="#1D2C44"/>
-    <rect x="1290" y="610" width="70" height="60" rx="5" fill="#2C3E5A"/>
-    <rect x="1370" y="610" width="70" height="60" rx="5" fill="#2C3E5A"/>
-    <circle cx="1325" cy="640" r="6" fill="#7FC98F"/>
-    <circle cx="1405" cy="640" r="6" fill="#7FC98F"/>
-    <rect x="1270" y="702" width="190" height="130" rx="6" fill="#1D2C44"/>
+    <rect x="1250" y="430" width="230" height="420" rx="12" fill="#0b2428"/>
+    <rect x="1270" y="452" width="190" height="56" rx="6" fill="#133238"/>
+    <circle cx="1294" cy="480" r="6" fill="#7fc98f"/>
+    <circle cx="1316" cy="480" r="6" fill="#7fc98f"/>
+    <rect x="1340" y="472" width="100" height="16" rx="3" fill="#1e4a52"/>
+    <rect x="1270" y="522" width="190" height="56" rx="6" fill="#133238"/>
+    <g fill="#2bb3a3"><rect x="1286" y="542" width="14" height="14" rx="2"/><rect x="1308" y="542" width="14" height="14" rx="2"/><rect x="1330" y="542" width="14" height="14" rx="2"/><rect x="1352" y="542" width="14" height="14" rx="2"/><rect x="1374" y="542" width="14" height="14" rx="2"/><rect x="1396" y="542" width="14" height="14" rx="2"/><rect x="1418" y="542" width="14" height="14" rx="2"/></g>
+    <rect x="1270" y="592" width="190" height="96" rx="6" fill="#133238"/>
+    <rect x="1290" y="610" width="70" height="60" rx="5" fill="#1e4a52"/>
+    <rect x="1370" y="610" width="70" height="60" rx="5" fill="#1e4a52"/>
+    <circle cx="1325" cy="640" r="6" fill="#7fc98f"/>
+    <circle cx="1405" cy="640" r="6" fill="#7fc98f"/>
+    <rect x="1270" y="702" width="190" height="130" rx="6" fill="#133238"/>
     <!-- Schild mit Haken: gesicherte Daten -->
-    <path d="M1365 718 L1410 734 V770 C1410 796 1390 812 1365 822 C1340 812 1320 796 1320 770 V734 Z" fill="#E8A33D"/>
-    <path d="M1345 768 L1360 784 L1388 752" fill="none" stroke="#0F1B2D" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1365 718 L1410 734 V770 C1410 796 1390 812 1365 822 C1340 812 1320 796 1320 770 V734 Z" fill="#2bb3a3"/>
+    <path d="M1345 768 L1360 784 L1388 752" fill="none" stroke="#0b2428" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   <!-- Kabel vom Schrank -->
-  <path d="M1250 800 C1180 800 1160 880 1080 880 H420" fill="none" stroke="#586177" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1250 800 C1180 800 1160 880 1080 880 H420" fill="none" stroke="#52666a" stroke-width="8" stroke-linecap="round"/>
 
   <!-- Tisch -->
-  <rect x="200" y="640" width="980" height="28" rx="6" fill="#B98A5E"/>
-  <rect x="230" y="668" width="24" height="230" fill="#8E6A48"/>
-  <rect x="1126" y="668" width="24" height="230" fill="#8E6A48"/>
-  <rect x="670" y="668" width="24" height="230" fill="#8E6A48"/>
+  <rect x="200" y="640" width="980" height="28" rx="6" fill="#b98a5e"/>
+  <rect x="230" y="668" width="24" height="230" fill="#8e6a48"/>
+  <rect x="1126" y="668" width="24" height="230" fill="#8e6a48"/>
+  <rect x="670" y="668" width="24" height="230" fill="#8e6a48"/>
 
   <!-- Arbeitsplatz 1 -->
   <g>
-    <rect x="290" y="410" width="330" height="200" rx="12" fill="#0F1B2D"/>
-    <rect x="304" y="424" width="302" height="172" rx="6" fill="#FFFFFF"/>
-    <rect x="304" y="424" width="302" height="28" rx="6" fill="#E1E4EA"/>
-    <rect x="320" y="470" width="120" height="14" rx="4" fill="#0F1B2D"/>
-    <rect x="320" y="496" width="260" height="10" rx="4" fill="#C3CBD7"/>
-    <rect x="320" y="516" width="220" height="10" rx="4" fill="#C3CBD7"/>
-    <rect x="320" y="546" width="90" height="30" rx="6" fill="#E8A33D"/>
-    <rect x="440" y="610" width="30" height="30" fill="#495568"/>
-    <rect x="400" y="634" width="110" height="10" rx="4" fill="#495568"/>
-    <rect x="330" y="618" width="150" height="14" rx="4" fill="#586177"/>
-    <rect x="530" y="616" width="36" height="20" rx="10" fill="#586177"/>
+    <rect x="290" y="410" width="330" height="200" rx="12" fill="#0b2428"/>
+    <rect x="304" y="424" width="302" height="172" rx="6" fill="#ffffff"/>
+    <rect x="304" y="424" width="302" height="28" rx="6" fill="#dbe7e4"/>
+    <rect x="320" y="470" width="120" height="14" rx="4" fill="#0b2428"/>
+    <rect x="320" y="496" width="260" height="10" rx="4" fill="#bccfcb"/>
+    <rect x="320" y="516" width="220" height="10" rx="4" fill="#bccfcb"/>
+    <rect x="320" y="546" width="90" height="30" rx="6" fill="#2bb3a3"/>
+    <rect x="440" y="610" width="30" height="30" fill="#435a5e"/>
+    <rect x="400" y="634" width="110" height="10" rx="4" fill="#435a5e"/>
+    <rect x="330" y="618" width="150" height="14" rx="4" fill="#52666a"/>
+    <rect x="530" y="616" width="36" height="20" rx="10" fill="#52666a"/>
   </g>
 
   <!-- Arbeitsplatz 2 -->
   <g>
-    <rect x="780" y="410" width="330" height="200" rx="12" fill="#0F1B2D"/>
-    <rect x="794" y="424" width="302" height="172" rx="6" fill="#FFFFFF"/>
-    <rect x="794" y="424" width="302" height="28" rx="6" fill="#E1E4EA"/>
-    <rect x="812" y="468" width="80" height="110" rx="6" fill="#EFF1F5"/>
-    <path d="M820 560 L840 528 L858 546 L884 500" fill="none" stroke="#E8A33D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-    <rect x="908" y="470" width="170" height="14" rx="4" fill="#0F1B2D"/>
-    <rect x="908" y="496" width="150" height="10" rx="4" fill="#C3CBD7"/>
-    <rect x="908" y="516" width="170" height="10" rx="4" fill="#C3CBD7"/>
-    <rect x="908" y="536" width="120" height="10" rx="4" fill="#C3CBD7"/>
-    <rect x="930" y="610" width="30" height="30" fill="#495568"/>
-    <rect x="890" y="634" width="110" height="10" rx="4" fill="#495568"/>
-    <rect x="820" y="618" width="150" height="14" rx="4" fill="#586177"/>
-    <rect x="1020" y="616" width="36" height="20" rx="10" fill="#586177"/>
+    <rect x="780" y="410" width="330" height="200" rx="12" fill="#0b2428"/>
+    <rect x="794" y="424" width="302" height="172" rx="6" fill="#ffffff"/>
+    <rect x="794" y="424" width="302" height="28" rx="6" fill="#dbe7e4"/>
+    <rect x="812" y="468" width="80" height="110" rx="6" fill="#e8f1ef"/>
+    <path d="M820 560 L840 528 L858 546 L884 500" fill="none" stroke="#2bb3a3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="908" y="470" width="170" height="14" rx="4" fill="#0b2428"/>
+    <rect x="908" y="496" width="150" height="10" rx="4" fill="#bccfcb"/>
+    <rect x="908" y="516" width="170" height="10" rx="4" fill="#bccfcb"/>
+    <rect x="908" y="536" width="120" height="10" rx="4" fill="#bccfcb"/>
+    <rect x="930" y="610" width="30" height="30" fill="#435a5e"/>
+    <rect x="890" y="634" width="110" height="10" rx="4" fill="#435a5e"/>
+    <rect x="820" y="618" width="150" height="14" rx="4" fill="#52666a"/>
+    <rect x="1020" y="616" width="36" height="20" rx="10" fill="#52666a"/>
   </g>
 
   <!-- Drucker -->
   <g>
-    <rect x="1000" y="900" width="170" height="90" rx="10" fill="#FFFFFF" stroke="#C3CBD7" stroke-width="5"/>
-    <rect x="1020" y="880" width="130" height="26" rx="4" fill="#E1E4EA"/>
-    <rect x="1030" y="950" width="110" height="14" rx="3" fill="#C3CBD7"/>
-    <circle cx="1150" cy="925" r="6" fill="#7FC98F"/>
+    <rect x="1000" y="900" width="170" height="90" rx="10" fill="#ffffff" stroke="#bccfcb" stroke-width="5"/>
+    <rect x="1020" y="880" width="130" height="26" rx="4" fill="#dbe7e4"/>
+    <rect x="1030" y="950" width="110" height="14" rx="3" fill="#bccfcb"/>
+    <circle cx="1150" cy="925" r="6" fill="#7fc98f"/>
   </g>
 
   <!-- Tasse und Pflanze -->
-  <rect x="1090" y="604" width="40" height="36" rx="6" fill="#FFFFFF" stroke="#C3CBD7" stroke-width="4"/>
-  <path d="M1130 612 C1146 612 1146 632 1130 632" fill="none" stroke="#C3CBD7" stroke-width="4"/>
+  <rect x="1090" y="604" width="40" height="36" rx="6" fill="#ffffff" stroke="#bccfcb" stroke-width="4"/>
+  <path d="M1130 612 C1146 612 1146 632 1130 632" fill="none" stroke="#bccfcb" stroke-width="4"/>
   <g>
-    <path d="M100 900 C70 820 90 760 140 730 C150 790 140 850 120 900 Z" fill="#7FA88A"/>
-    <path d="M140 900 C150 800 190 760 230 750 C230 820 200 870 160 900 Z" fill="#6A9576"/>
-    <path d="M118 900 C100 840 110 790 120 770" fill="none" stroke="#4E7A5B" stroke-width="4"/>
-    <rect x="90" y="890" width="100" height="90" rx="10" fill="#FFFFFF" stroke="#C3CBD7" stroke-width="5"/>
+    <path d="M100 900 C70 820 90 760 140 730 C150 790 140 850 120 900 Z" fill="#7fa88a"/>
+    <path d="M140 900 C150 800 190 760 230 750 C230 820 200 870 160 900 Z" fill="#6a9576"/>
+    <path d="M118 900 C100 840 110 790 120 770" fill="none" stroke="#4e7a5b" stroke-width="4"/>
+    <rect x="90" y="890" width="100" height="90" rx="10" fill="#ffffff" stroke="#bccfcb" stroke-width="5"/>
   </g>
 </svg>
