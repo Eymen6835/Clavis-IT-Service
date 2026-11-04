@@ -34,7 +34,7 @@
   color-scheme: light;
 
   --bg:            #fbfaf7;
-  --bg-sunken:     #eff1f5;
+  --bg-sunken:     #f3efe6;
   --bg-raised:     #ffffff;
   --ink:           #0f1b2d;
   --ink-muted:     #495568;
@@ -44,7 +44,7 @@
   --accent-ink:    #0f1b2d;
   --accent-text:   #8a5a12;
   --accent-wash:   rgba(232, 163, 61, 0.14);
-  --line:          #e1e4ea;
+  --line:          #e6e1d5;
   --line-strong:   #c3cbd7;
   --shadow-sm:     0 1px 2px rgba(15, 27, 45, 0.06);
   --shadow-md:     0 14px 34px -14px rgba(15, 27, 45, 0.24);
