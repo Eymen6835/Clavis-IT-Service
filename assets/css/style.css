@@ -1358,7 +1358,7 @@ h3, h4 { letter-spacing: -0.022em; }
 
 .hero h1 {
   font-weight: 600;
-  font-size: clamp(2.6rem, 1.6rem + 4.4vw, 6.5rem);
+  font-size: clamp(2.3rem, 1.4rem + 3.6vw, 4rem);
   line-height: 1;
   letter-spacing: -0.042em;
   margin-bottom: 0;
@@ -1998,7 +1998,7 @@ a.card:hover,
   .hero__bild img { aspect-ratio: 16 / 9; }
 }
 @media (min-width: 64em) {
-  .hero h1 { font-size: clamp(3.4rem, 1.2rem + 3.6vw, 5.2rem); } 
+  .hero h1 { font-size: clamp(2.9rem, 1rem + 3vw, 3.5rem); }
   .hero > .wrap { position: static; }
   .hero__inner { position: relative; z-index: 1; }
   .hero__bild {
@@ -2497,8 +2497,8 @@ h1, h2, h3, h4 {
 
 h1 { letter-spacing: -0.03em; }
 h2 {
-  font-size: clamp(2rem, 1.45rem + 2.2vw, 3.25rem);
-  line-height: 1.06;
+  font-size: clamp(1.625rem, 1.3rem + 1.1vw, 2.25rem);
+  line-height: 1.12;
   letter-spacing: -0.028em;
 }
 h3, h4 { letter-spacing: -0.015em; }
@@ -2675,7 +2675,7 @@ h3, h4 { letter-spacing: -0.015em; }
 .leistungsliste--statisch li:target h3 { color: var(--accent-text); }
 .leistungsliste--statisch li:target::after { transform: scaleX(1); }
 
-.service-group__head h2 { font-size: clamp(1.75rem, 1.35rem + 1.3vw, 2.4rem); line-height: 1.08; }
+.service-group__head h2 { font-size: clamp(1.625rem, 1.3rem + 1.1vw, 2.25rem); line-height: 1.12; }
 
 .footer { background: var(--bg-raised); }
 .footer h2 {
