@@ -3,7 +3,7 @@
   <rect width="120" height="120" rx="26" fill="#0f2d52"/>
   <g transform="translate(-3 0)">
     <path d="M60.4 41.6 A26 26 0 1 0 60.4 78.4" fill="none" stroke="#ffffff" stroke-width="13" stroke-linecap="round"/>
-    <path d="M47 60 H110" fill="none" stroke="#2bb3a3" stroke-width="13" stroke-linecap="round"/>
-    <path d="M90 60 V77 M103 60 V71" fill="none" stroke="#2bb3a3" stroke-width="13" stroke-linecap="round"/>
+    <path d="M47 60 H110" fill="none" stroke="#e0713f" stroke-width="13" stroke-linecap="round"/>
+    <path d="M90 60 V77 M103 60 V71" fill="none" stroke="#e0713f" stroke-width="13" stroke-linecap="round"/>
   </g>
 </svg>

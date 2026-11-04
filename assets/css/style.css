@@ -39,11 +39,11 @@
   --ink:           #0b1f3a;
   --ink-muted:     #44566e;
   --ink-subtle:    #56637a;
-  --accent:        #2bb3a3;
-  --accent-hover:  #229c8e;
+  --accent:        #e0713f;
+  --accent-hover:  #c95f2f;
   --accent-ink:    #0b1f3a;
-  --accent-text:   #0b6b61;
-  --accent-wash:   rgba(43, 179, 163, 0.14);
+  --accent-text:   #a2400f;
+  --accent-wash:   rgba(224, 113, 63, 0.14);
   --line:          #e4ddd0;
   --line-strong:   #cdc6b6;
   --shadow-sm:     0 1px 2px rgba(11, 31, 58, 0.06);
@@ -51,7 +51,7 @@
   --overlay:       rgba(251, 250, 247, 0.9);
   --img-tint:      rgba(11, 31, 58, 0.05);
   --card-shadow:   0 1px 2px rgba(11, 31, 58, 0.06), 0 6px 16px -10px rgba(11, 31, 58, 0.18);
-  --accent-icon:   #178a7c;   
+  --accent-icon:   #c25a2b;   
 
   --font-brand: 'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
   --font-sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI Variable Text',
@@ -103,11 +103,11 @@
     --ink:          #eaf0f8;
     --ink-muted:    #c6d3e6;
     --ink-subtle:   #a3b3cc;
-    --accent:       #2bb3a3;
-    --accent-hover: #5cd0c1;
+    --accent:       #e0713f;
+    --accent-hover: #f08a5d;
     --accent-ink:   #0b1f3a;
-    --accent-text:  #6fd9cb;
-    --accent-wash:  rgba(43, 179, 163, 0.16);
+    --accent-text:  #f5a47c;
+    --accent-wash:  rgba(224, 113, 63, 0.16);
     --line:         #1c2b45;
     --line-strong:  #34486a;
     --shadow-sm:    0 1px 2px rgba(0, 0, 0, 0.45);
@@ -127,11 +127,11 @@
   --ink:          #eaf0f8;
   --ink-muted:    #c6d3e6;
   --ink-subtle:   #a3b3cc;
-  --accent:       #2bb3a3;
-  --accent-hover: #5cd0c1;
+  --accent:       #e0713f;
+  --accent-hover: #f08a5d;
   --accent-ink:   #0b1f3a;
-  --accent-text:  #6fd9cb;
-  --accent-wash:  rgba(43, 179, 163, 0.16);
+  --accent-text:  #f5a47c;
+  --accent-wash:  rgba(224, 113, 63, 0.16);
   --line:         #1c2b45;
   --line-strong:  #34486a;
   --shadow-sm:    0 1px 2px rgba(0, 0, 0, 0.45);
@@ -1536,7 +1536,7 @@ a.card:hover,
   pointer-events: none;
 }
 .cta-band::before {
-  background: radial-gradient(55% 75% at 50% 0%, rgba(43, 179, 163, 0.18), transparent 72%);
+  background: radial-gradient(55% 75% at 50% 0%, rgba(224, 113, 63, 0.18), transparent 72%);
 }
 .cta-band::after {
   background-image: radial-gradient(rgba(234, 240, 248, 0.10) 1px, transparent 1px);
@@ -1573,8 +1573,8 @@ a.card:hover,
 }
 .header::before {
   background:
-    linear-gradient(90deg, transparent 8%, rgba(43, 179, 163, 0.9) 50%, transparent 92%) bottom / 100% 1px no-repeat,
-    radial-gradient(45% 70% at 50% 100%, rgba(43, 179, 163, 0.13), transparent 100%);
+    linear-gradient(90deg, transparent 8%, rgba(224, 113, 63, 0.9) 50%, transparent 92%) bottom / 100% 1px no-repeat,
+    radial-gradient(45% 70% at 50% 100%, rgba(224, 113, 63, 0.13), transparent 100%);
 }
 .header::after {
   background-image: radial-gradient(var(--kopf-punkt) 1px, transparent 1px);
@@ -2023,7 +2023,7 @@ a.card:hover,
 .header::before {
   inset: auto 0 0 0;
   height: 1px;
-  background: #2bb3a3;
+  background: #e0713f;
   opacity: 0.85;
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -2409,7 +2409,7 @@ a.card:hover,
   .privat-hinweis { flex-direction: column; gap: var(--sp-2); }
 }
 
-.brand__name span { color: #0b6b61; }
+.brand__name span { color: #a2400f; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) .brand__name span { color: var(--accent); }
 }
@@ -2720,7 +2720,7 @@ h3, h4 { letter-spacing: -0.015em; }
   --ink-subtle:  #8190a8;
   --line:        rgba(255, 255, 255, 0.09);
   --line-strong: rgba(255, 255, 255, 0.24);
-  --accent-text: #6fd9cb;
+  --accent-text: #f5a47c;
   position: relative;
   isolation: isolate;
   overflow: hidden;
@@ -2747,7 +2747,7 @@ h3, h4 { letter-spacing: -0.015em; }
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: radial-gradient(56rem 20rem at 50% 0%, rgba(43, 179, 163, 0.11), transparent 70%);
+  background: radial-gradient(56rem 20rem at 50% 0%, rgba(224, 113, 63, 0.11), transparent 70%);
   pointer-events: none;
 }
 
@@ -2809,7 +2809,7 @@ h3, h4 { letter-spacing: -0.015em; }
   height: 7px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 0 4px rgba(43, 179, 163, 0.16);
+  box-shadow: 0 0 0 4px rgba(224, 113, 63, 0.16);
 }
 
 .footer__bottom { margin-top: var(--sp-6); color: var(--ink-subtle); }
@@ -2840,19 +2840,19 @@ h3, h4 { letter-spacing: -0.015em; }
 
 .footer {
   background:
-    radial-gradient(56rem 20rem at 50% 0%, rgba(43, 179, 163, 0.11), transparent 70%),
+    radial-gradient(56rem 20rem at 50% 0%, rgba(224, 113, 63, 0.11), transparent 70%),
     #0b1f3a;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) .footer {
     background:
-      radial-gradient(56rem 20rem at 50% 0%, rgba(43, 179, 163, 0.1), transparent 70%),
+      radial-gradient(56rem 20rem at 50% 0%, rgba(224, 113, 63, 0.1), transparent 70%),
       #050c18;
   }
 }
 :root[data-theme='dark'] .footer {
   background:
-    radial-gradient(56rem 20rem at 50% 0%, rgba(43, 179, 163, 0.1), transparent 70%),
+    radial-gradient(56rem 20rem at 50% 0%, rgba(224, 113, 63, 0.1), transparent 70%),
     #050c18;
 }
 .footer::after {
@@ -2888,7 +2888,7 @@ h3, h4 { letter-spacing: -0.015em; }
 
 .footer__wortmarke {
   background:
-    radial-gradient(38% 90% at 50% 0%, rgba(43, 179, 163, 0.26), transparent 70%),
+    radial-gradient(38% 90% at 50% 0%, rgba(224, 113, 63, 0.26), transparent 70%),
     linear-gradient(180deg, rgba(234, 240, 248, 0.15), rgba(234, 240, 248, 0) 88%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -2967,8 +2967,8 @@ body.is-locked .callbar { right: calc(0.625rem + var(--sb, 0px)); }
   box-shadow: inset 0 1px 0 var(--glas-licht);
 }
 .callbar .btn--primary {
-  background: linear-gradient(180deg, rgba(92, 208, 193, 0.96), rgba(43, 179, 163, 0.96));
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45), 0 6px 18px rgba(43, 179, 163, 0.35);
+  background: linear-gradient(180deg, rgba(240, 138, 93, 0.96), rgba(224, 113, 63, 0.96));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45), 0 6px 18px rgba(224, 113, 63, 0.35);
 }
 
 body { padding-bottom: 0; }
