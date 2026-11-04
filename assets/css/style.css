@@ -3214,3 +3214,17 @@ body { padding-bottom: 0; }
 }
 .fw__schritte h2 { font-size: 1.2rem; margin: 0; }
 .fw__schritte p { margin: 0; color: var(--ink-muted); }
+
+/* Vertrauensleiste: Porträt + drei Aussagen */
+.stat-row--vertrauen { gap: var(--sp-3); }
+.stat-row--vertrauen .stat--person { align-items: center; }
+.stat__name { font-family: var(--font-brand); font-weight: 700; font-size: 1.125rem; letter-spacing: -0.02em; line-height: 1.2; margin: 0; }
+.stat--person .stat__label { margin-top: 0.125rem; }
+@media (min-width: 40em) {
+  .stat-row--vertrauen { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 64em) {
+  .stat-row--vertrauen { grid-template-columns: 0.9fr repeat(3, 1fr); }
+}
+.stat-row--vertrauen .stat__value { font-size: var(--step-2); }
+.js .reveal.stat-row > *:nth-child(4) { transition-delay: calc(3 * var(--stagger)); }
