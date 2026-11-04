@@ -16,7 +16,7 @@
   </defs>
 
   <g transform="translate(20 19.6) scale(1.5)">
-    <rect width="120" height="120" rx="26" fill="#0d3a40"/>
+    <rect width="120" height="120" rx="26" fill="#0f2d52"/>
     <g transform="translate(-3 0)">
       <path d="M60.4 41.6 A26 26 0 1 0 60.4 78.4" fill="none" stroke="#ffffff" stroke-width="13" stroke-linecap="round"/>
       <path d="M47 60 H110" fill="none" stroke="#2bb3a3" stroke-width="13" stroke-linecap="round"/>
@@ -24,7 +24,7 @@
     </g>
   </g>
 
-  <text class="wm"  x="225" y="65"  fill="#0b2428">Clavis</text>
+  <text class="wm"  x="225" y="65"  fill="#0b1f3a">Clavis</text>
   <text class="wm"  x="225" y="135" fill="#2bb3a3">IT Service</text>
-  <text class="tag" x="225" y="195" fill="#435a5e">IT-SERVICE &#183; ZUVERL&#196;SSIG &#183; VOR ORT</text>
+  <text class="tag" x="225" y="195" fill="#44566e">IT-SERVICE &#183; ZUVERL&#196;SSIG &#183; VOR ORT</text>
 </svg>

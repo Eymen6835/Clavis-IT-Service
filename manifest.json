@@ -8,8 +8,8 @@
   "scope": "./",
   "id": "/",
   "display": "standalone",
-  "background_color": "#08171a",
-  "theme_color": "#f6faf9",
+  "background_color": "#081426",
+  "theme_color": "#f5f8fc",
   "categories": [
     "business",
     "utilities"
