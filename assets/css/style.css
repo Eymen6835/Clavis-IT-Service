@@ -3228,3 +3228,10 @@ body { padding-bottom: 0; }
 }
 .stat-row--vertrauen .stat__value { font-size: var(--step-2); }
 .js .reveal.stat-row > *:nth-child(4) { transition-delay: calc(3 * var(--stagger)); }
+
+/* Fernwartung-Knopf im Kopfbereich: kleiner als die übrigen Knöpfe */
+.btn--xs { min-height: 2.375rem; padding: 0.25rem 0.9rem; font-size: 0.9375rem; }
+.header__actions .header__fw { display: none; }
+@media (min-width: 84em) {
+  .header__actions .header__fw { display: inline-flex; }
+}
